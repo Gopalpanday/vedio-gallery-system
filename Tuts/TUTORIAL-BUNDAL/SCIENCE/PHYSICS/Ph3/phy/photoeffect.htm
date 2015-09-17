@@ -1,0 +1,55 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/RBC-html40/loose.dtd">
+
+<html>
+
+<head>
+<title>Photoelectric effect</title>
+<link rel="stylesheet" type="text/css" href="../ph14/applets2.css">
+<meta http-equiv=content-type content="text/html; charset=iso-8859-1">
+<meta name="description" content="Java applet: Photoelectric effect">
+<meta name="author" content="Walter Fendt">
+<meta name="keywords" content="physics, atoms, quantum physics, photoelectric effect, Planck constant">
+</head>
+
+<body>
+
+<h1>The Photoelectric Effect</h1>
+
+<p>A freshly polished, negatively charged zinc plate looses its charge if it is exposed to ultraviolet light. This phenomenon is called the <em class="Begriff">photoelectric effect</em>.</p>
+
+<p>Careful investigations toward the end of the nineteenth century proved that the photoelectric effect occurs with other materials, too, but only if the wavelength is short enough. The photoelectric effect is observed below some threshold wavelength which is specific to the material. Especially the fact that light of large wavelengths has no effect at all even if it is extremely intensive, appeared mysterious for the scientists.</p>
+
+<p>Albert Einstein finally gave the explanation in 1905: Light consists of particles (<em class="Begriff">photons</em>), and the <em class="Begriff">energy</em> of such a particle is proportional to the <em class="Begriff">frequency</em> of the light. There is a certain minimum amount of energy (dependent on the material) which is necessary to remove an electron from the surface of a zinc plate or another solid body (<em class="Begriff">work function</em>). If the energy of a photon is bigger than this value, the electron can be emitted. From this explanation the following equation results:</p>
+
+<table class="Formel" align="center"><tr><td class="Formel">
+E<sub>kin</sub> &nbsp; = &nbsp; h f &nbsp; &#8722; &nbsp; W
+</td></tr></table>
+
+<p class="Formel">
+E<sub>kin</sub> ... maximal kinetic energy of an emitted electron<br>
+h ..... Planck constant (6.626&nbsp;x&nbsp;10<sup>&#8722;34</sup> Js)<br>
+f ..... frequency<br>
+W ..... work function
+</p>
+
+<p>This Java applet simulates an experiment for the determination of the <em class="Begriff">Planck constant</em> and the work function: A single spectral line is filtered out from the light of a mercury lamp. This light strikes the cathode (C) of a photoelectric cell and causes the emission of electrons (or not). In order to find the maximal kinetic energy of the ejected electrons it is necessary to enlarge a retarding voltage by means of a potentiometer connection so much that no more electrons arrive at the anode (A). The blue coloured meter indicates the size of this retarding voltage. You can see from the red coloured meter whether electrons reach the anode.</p>
+
+<p>The panel at the right side allows you to vary the cathode's material, the wavelength and the retarding voltage. The indicated values refer to the frequency of the light and to the energy balance of the photoelectric effect. The results of the measurements are drawn in a frequency voltage diagram on the bottom left, but can be cleared with the button of the panel.</p>
+
+<p>The evaluation of the three measurement series by means of the diagram will result in three parallel lines. From the slope of these lines the Planck constant (h) can be calculated. In addition you can read the work function of the respective cathode material (in eV, i.e. electron volt) directly from the intersection with the vertical axis.</p>
+
+<p align="center">
+<applet code="Photoeffekt.class" archive="Photoeffekt.jar, Ph14English.jar" codebase="../ph14_jar" width=730 height=410>
+<font color="#ff0000">Java runtime environment not installed or deactivated</font>
+</applet></p>
+
+<div class="Abstand">&nbsp;</div>
+
+<hr class="Trennlinie">
+
+<div class="Abstand">&nbsp;</div>
+
+</body>
+
+</html>

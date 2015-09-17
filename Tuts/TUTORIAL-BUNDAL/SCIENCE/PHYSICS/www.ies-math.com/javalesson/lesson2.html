@@ -1,0 +1,105 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<title>Lesson 2</title>
+</head><body>
+<div align="right">
+<a href="http://www.ies-math.com/math/javalesson/menu.html"><img src="lesson2_files/menu.gif" border="0" height="41" width="144"></a>
+<a href="http://www.ies-math.com/math/javalesson/index.html"><img src="lesson2_files/top.gif" border="0" height="41" width="144"></a>
+</div>
+<hr>
+
+<h1>Lesson 2  Drawing curves</h1>
+<h3>Points and Activities</h3>
+<ol>
+<li>Double and integer
+</li><li>Casting
+</li><li>Changing colors
+</li><li>Math objects
+</li><li>Utilizing coordinates 
+</li></ol>
+
+<hr>
+<h3>Example 2 Lissajous figures</h3>
+<a href="http://www.ies-math.com/math/javalesson/Exm2/Exm2.html">Screen of the applet</a>
+<br><br>
+
+<b>Exm2.java</b>
+<br>
+<table border="2" width="500">
+<tbody><tr bgcolor="#ffffff"><td bgcolor="#ccffff">
+<pre>import java.awt.*;                 
+import java.applet.*;              
+
+public class Exm2 extends Applet   
+{
+	public void paint(Graphics g)  
+	{             
+	    int t;                      //angle (degree)
+	    double tt;                  //angle (radian)
+	    int x1,y1,x2,y2;            //two points
+	   
+	    g.setColor(new Color(255, 255, 192)); //back color
+	    g.fillRect(0,0,300,300);
+	    g.setColor(Color.black);    //color of axes
+	    g.drawLine(0,150,300,150);  //x axis
+	    g.drawLine(150,0,150,300);  //y axis
+	    
+	    g.setColor(Color.blue);     //color of the graph
+		for(t=0;t&lt;=360;t=t+1){
+		    tt=(double)(t)/180*Math.PI; //degree to radian      
+		    x1=(int)(100*Math.cos(3*tt)+150);// point 1
+		    y1=(int)(100*Math.sin(5*tt)+150);
+		    tt=(double)(t+1)/180*Math.PI;
+		    x2=(int)(100*Math.cos(3*tt)+150);// point 2
+		    y2=(int)(100*Math.sin(5*tt)+150);
+		    g.drawLine(x1,y1,x2,y2);    //connect 2 points
+		}
+	}
+
+}
+
+
+</pre>
+</td></tr>
+</tbody></table>
+<p>
+
+<b>Exm2.html</b>
+<br>
+<table border="2" width="500">
+<tbody><tr bgcolor="#ffffff"><td bgcolor="#ffffaa">
+<pre>&amp;ltHTML&gt;
+&amp;ltHEAD&gt;
+&amp;ltTITLE&amp;gtExm2&lt;/TITLE&gt;
+&lt;/HEAD&gt;
+&amp;ltBODY&gt;
+&amp;ltAPPLET CODE="Exm2.class" WIDTH=300 HEIGHT=300&gt;&lt;/APPLET&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;
+<pre></pre></pre></td></tr>
+</tbody></table>
+</p><p>
+</p><hr>
+<b>Excercise 2a</b> <br>
+
+(1) Change the source code of example 2, and draw various lissajous figures.<p>
+(2) Draw the graph of r(t)=sin 4t ( polar coordinates ).
+
+<br>
+<img src="lesson2_files/Exr2a.gif" height="300" width="300">
+
+</p><p>
+
+<b>Excercise 2b</b>  Draw the graph of y=sin x. Set the width
+of the screen to 360 pixcels.
+
+<br>
+<img src="lesson2_files/Exr2b.gif" height="300" width="360">
+<br>
+</p><hr>
+<div align="right">
+<a href="http://www.ies-math.com/math/javalesson/menu.html"><img src="lesson2_files/menu.gif" border="0" height="41" width="144"></a>
+<a href="http://www.ies-math.com/math/javalesson/index.html"><img src="lesson2_files/top.gif" border="0" height="41" width="144"></a>
+</div>
+</body></html>

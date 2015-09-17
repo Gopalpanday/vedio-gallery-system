@@ -1,0 +1,88 @@
+body{
+    background-image: url(../Images/2.jpg);
+}
+.container{
+    margin: auto;
+    padding: auto;
+    width: 1000px;
+    height: 550px;
+    border-left: 2px solid brown;
+    border-right: 2px solid brown;
+}
+
+.header{
+    background-color: brown;
+}
+.header img#left{
+    float: left;
+    padding: 5px;
+    margin-right: 20px;
+    height: 70px;
+    width: 100px;
+}
+.header img#right{
+    position: absolute;
+    left: 1100px;
+    top: 30px;
+    height: 40px;
+    width: 40px;
+}
+
+
+.header h1{
+    color: white;
+    line-height: 80px;
+    font-family: cambria;
+}
+.header img#mid{
+    position: absolute;
+    left: 1000px;
+    top: 30px;
+    height: 40px;
+    width: 40px;
+}
+.header img#mid:hover{
+    width: 150px;
+    height: 150px;
+}
+.loginTable{
+    width: 48%;
+    height: 50%;
+    border:#000000 solid 2px;
+    margin-top: 40px;
+    margin-left: 20px;
+    background-color: white;
+}
+
+.footer{
+    width: 1000px;
+    position: absolute;
+    top: 510px;
+    background-color: brown;
+    color: white;
+    font-family: Cambria;
+    font-size: large;
+    text-align: right;
+}
+.loginButton{  
+    //background-image: url('../images/');
+}
+
+.PhotoAlbum{
+    position: absolute;
+    left: 700px;
+    top: 120px;
+    width: 460px;
+    height: 360px;
+}
+
+.Album{
+    width: 460px;
+    height: 360px;
+}
+#userWelcomeName{
+    color: red;
+    font-family: cambria;
+    font-size: x-large;
+    text-transform: uppercase;
+}

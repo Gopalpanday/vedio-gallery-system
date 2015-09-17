@@ -1,0 +1,93 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta name="Keywords" content="mathematics education, wiskunde onderwijs, Freudenthal instituut">
+  <meta name="Description" content="Het WisWeb is een website (o.a. met java-applets) voor leerlingen en docenten wiskunde uit het voortgezet onderwijs">
+<link href="http://www.fi.uu.nl/css/wisweb-nieuw.css" rel="stylesheet" type="text/css">
+        <title>Wisweb applets</title>
+
+		
+<SCRIPT language="JavaScript">
+
+<!-- De functie geefoverzicht, wordt aangeroepen als je op ok drukt om te zoeken. Is er niks aangevinkt, dan worden er alle toepassingen getoond. Is er wel wat geselecteerd dan geeft Bepaalkeuze() iets anders terug dan "pagina=wiswebplus&alletoepassingen=all". De url wordt dan gemaakt op de gegevens die bepaalkeuze teruggeeft-->
+
+function GeefOverzicht()
+{
+	var s = BepaalKeuze();
+	bestand="snelmenuapplets/overzicht.xml?language=en"+s;
+	parent.below.location.href=bestand;
+<!-- in een frame eronder zet dan:	parent.underframe.location.href=bestand; ipv newwindow(enz er neer -->
+	
+}
+
+<!-- Bepaalkeuze maakt de url-naam op basis van het aangevinkte en geeft deze terug aan GeefOverzicht.--> 
+<!-- Standaard begint een url met "pagina=wiswebplus" en daarachter worden andere variabelen toegevoegd, mits aangevinkt of geselecteerd.-->
+
+function BepaalKeuze()
+{
+	var subject = document.keuze.subject.value;
+	<!--var school = document.keuze.school.value;-->
+	var targetGroup = document.keuze.targetGroup.value;
+ 	k = '&subject='+subject+'&targetGroupSecundary='+targetGroup;
+	
+	return k;
+}
+
+</SCRIPT>		
+<script src="http://www.fi.uu.nl/scripts/popup.js"></script>
+
+</head>
+<body>
+<div align="center"><h3><nobr>Overview of WisWeb-applets, select by subject and/or age group</nobr></h3></div>
+<br>
+
+
+<!-- Het keuzeformulier bestaat uit een tabel met daarin een formulier. belangrijk zijn de namen van de checkboxes en/of hun ID. -->
+
+<div align="center">
+<table>
+
+<form name="keuze" onSubmit="return false;">
+
+<tr align="center"><td>
+<td><div align="center">
+			<select name="subject">
+				<option value="all" selected>all subjects
+				<option value="1">number sense
+				<option value="2">number & estimation
+				<option value="3">measurement
+				<option value="4">algebra & calculus
+				<option value="5">geometry
+				<option value="6">statistics & probability
+				<option value="7">discrete math
+				<option value="8">other
+			</select>
+			</div></td>
+
+<td width="120"><div align="center">
+			<select name="targetGroup">
+				<option value="all" selected>all age groups
+				<option value="1">primary education
+				<option value="2">special needs
+				<option value="3">middle school (gr. 7-8)
+				<option value="4">high school (gr. 9-10)
+				<option value="5">high school (gr. 11-12)
+				<option value="6">high school and above
+				<option value="7">vocational (gr. 7-8)
+				<option value="8">vocational (gr. 9-12)
+				<option value="9">adult learning
+				<option value="10">other
+			</select>
+			</div>	</td>		
+			<td colspan="2"> <input type="submit" value="OK" onClick="GeefOverzicht();"></td>
+</tr>
+</form> 
+
+
+</td>
+
+</table>
+</div>
+
+</body>
+</html>

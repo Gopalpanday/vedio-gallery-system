@@ -1,0 +1,105 @@
+<HTML>
+<HEAD>
+<LINK REL="STYLESHEET"  HREF="../../../style.css" TYPE="text/css">
+<LINK REL="SHORTCUT ICON" HREF="../../../images/favicon.ico">
+<TITLE>Rectangular Transposition</TITLE>
+</HEAD>
+
+<BODY bgcolor=white vlink="blue">
+
+
+<!- ---------------------------- PAGE HEADER ------------------------------- ->
+<TABLE cellpadding=0 cellspacing=0 border=0 width=700>
+<TR>
+<TD colspan=2>
+<FONT size=+2><B>David Little</B></FONT>
+</TD>
+</TR>
+<TR><TD valign=top>
+<A HREF="http://www.math.psu.edu">Mathematics Department</A><BR> 
+<A HREF="http://www.psu.edu">Penn State University</A><BR>
+Eberly College of Science<BR>
+University Park, PA  16802<BR>
+</TD>
+<TD align=right valign=top>
+Office: 403 McAllister<BR>
+Phone: (814) 865-3329<BR>
+Fax: (814) 865-3735<BR>
+e-mail:<A HREF="mailto:dlittle@psu.edu">dlittle@psu.edu</A><BR>
+</TD>
+</TR>
+<!- ------------------------------------------------------------------------ ->
+<TR>
+<TD valign=top align=left colspan=2>
+<BR>
+<TABLE width=100% border=0 cellspacing=0 cellpadding=0>
+<TR align=center bgcolor=#291C5E>
+<TD><A HREF="../../../index.html"><FONT color=white><B>Home</B></FONT></A></TD>
+<TD><A HREF="../../../courses.html"><FONT color=white><B>Courses</B></FONT></A></TD>
+<TD><A HREF="../../../math.html"><FONT color=white><B>Math Links</B></FONT></A></TD>
+<TD><A HREF="../../../resources.html"><FONT color=white><B>Resources</B></FONT></A></TD>
+<TD><A HREF="../../../applets.html"><FONT color=white><B>Java Applets</B></FONT></A></TD>
+</TR>
+</TABLE>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD colspan=2>
+<!- ------------------------------------------------------------------------ ->
+
+<B><FONT size=+1>Breaking The Rectangular Transposition Encryption System</FONT></B>
+<BR><I> by Adriano M. Garsia</I>
+
+
+
+<P>
+We shall view Rectangular Transposition in a slightly different manner than we did originally.  We assume that the sender and receiver choose a secret period <TT>p</TT> and a secret permutation of length <TT>p</TT>, say <TT>a=(a<SUB>1</SUB>,a<SUB>2</SUB>,...,a<SUB>p</SUB>)</TT> where each <TT>a<SUB>i</SUB></TT> is taken from the set <TT>{1,2,...,p}</TT> and no two are the same.  The plaintext is broken up into blocks of length <TT>p</TT> and then each block is transposed by the permutation <TT>a</TT>.  For example, if the <TT>(i+1)</TT><SUP><I>st</I></SUP> block of plaintext is <TT>X<SUB>ip+1</SUB>,X<SUB>ip+2</SUB>,...,X<SUB>ip+p</SUB></TT>, then the <TT>(i+1)</TT><SUP><I>st</I></SUP> block of cyphertext would be <TT>X<SUB>ip+a<SUB>1</SUB></SUB>,X<SUB>ip+a<SUB>2</SUB></SUB>,...,X<SUB>ip+a<SUB>p</SUB></SUB></TT>.  This encryption system is vulnerable to a biletter-frequency analysis, since letters that are close together in the plaintext message, tend to stay close together in the cyphertext message. 
+
+<P>
+To break Rectangular Transposition encryption, one guesses a period <TT>p</TT> and then, uses the given matrix of statistics to determine the validity of <TT>p</TT> according to the following cases
+
+<OL>
+<LI>All the entries in the matrix are approximately the same
+<LI>Each row except one has a maximum that is much larger than all the other entries in the row.  Similarly, each column except one has a maximum that is much larger than all the other entries in the column.
+</OL>
+
+In case 1, the opponent concludes that <TT>p</TT> was a wrong guess for the period and proceeds to repeat the calculations with another value of <TT>p</TT>.
+In case 2, the opponent guessed that <TT>p</TT> is the right value and from the matrix, reconstructs the permutation by clicking on the cell that contains the maximum value.
+
+<P>The Applet below is programmed to
+illustrate this codebreaking process. </FONT></P>
+
+<UL>
+<LI>Upon pressing the <I>Random Cyphertext</I> button, the
+Applet will display some text which is Rectangular Transposition encrypted by a randomly selected key.</LI>
+
+<LI>Press the <I>Break</I> button to start the process. The
+Applet assumes (most often incorrectly) that <TT>p=2</TT>. Thus it proceeds
+as if every pair of letters of plaintext was encrypted by reversing the order of the pair. It displays the matrix of statistics and a visual representation of the permutation.</LI>
+
+<LI>Press the <I>Period +</I> several times (if
+necessary) until an appropriate value of <TT>p</TT> is obtained.  Of course, an appropriate value is found according to the above criteria.</LI>
+
+<LI>Now click in the cells of the matrix that contain the largest value in each row.  Arrows will be drawn on the permutation to help keep track of it.  For instance, after clicking in the <TT>i</TT><SUP><I>th</I></SUP> row and <TT>j</TT><SUP><I>th</I></SUP> column, an arrow is drawn from <TT>i</TT> to <TT>j</TT> to indicate that the <TT>i</TT><SUP><I>th</I></SUP> letter of cyphertext was most likely followed by the <TT>j</TT><SUP><I>th</I></SUP> letter of cyphertext.</LI>
+
+<LI>Now you may press the <I>Decrypt</I> button.
+The Applet will then decrypt the given cyphertext as if it was encrypted
+by means of the values of <TT>a<SUB>1</SUB>,a<SUB>2</SUB>,...,a<SUB>p</SUB></TT> you have just determined.
+A look at the resulting text will make it clear if all of your guesses
+were correct or which, if any, need to be changed.</LI>
+</UL>
+
+
+<CENTER>
+<APPLET CODEBASE="class" CODE="http://www.personal.psu.edu/dpl14/java/cryptography/transposition/Rectangular.class" WIDTH=600 HEIGHT=400></APPLET>
+</CENTER>
+<HR>
+<A HREF="Transposition.zip">Download</A> this applet for off-line viewing (includes source code)
+
+<HR>
+</TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>

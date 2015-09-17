@@ -1,0 +1,277 @@
+<HTML>
+<HEAD>
+<TITLE>Calculus Applets</TITLE>
+<LINK REL="STYLESHEET"  HREF="../../../style.css" TYPE="text/css">
+<LINK REL="SHORTCUT ICON" HREF="../../../images/favicon.ico">
+</HEAD>
+
+<BODY bgcolor=white vlink="blue">
+
+
+<!- ---------------------------- PAGE HEADER ------------------------------- ->
+<TABLE cellpadding=0 cellspacing=0 border=0 width=700>
+<TR>
+<TD colspan=2>
+<FONT size=+2><B>David Little</B></FONT>
+</TD>
+</TR>
+<TR><TD valign=top>
+<A HREF="http://www.math.psu.edu">Mathematics Department</A><BR> 
+<A HREF="http://www.psu.edu">Penn State University</A><BR>
+Eberly College of Science<BR>
+University Park, PA  16802<BR>
+</TD>
+<TD align=right valign=top>
+Office: <A HREF="http://www.our.psu.edu/soc_maps/mcalstr.html">403 McAllister</A><BR>
+Phone: (814) 865-3329<BR>
+Fax: (814) 865-3735<BR>
+e-mail:<A HREF="mailto:dlittle@psu.edu">dlittle@psu.edu</A><BR>
+</TD>
+</TR>
+<!- ------------------------------------------------------------------------ ->
+<TR>
+<TD valign=top align=left colspan=2>
+<BR>
+<TABLE width=100% border=0 cellspacing=0 cellpadding=0>
+<TR align=center bgcolor=#291C5E>
+<TD><A HREF="../../../index.html"><FONT color=white><B>Home</B></FONT></A></TD>
+<TD><A HREF="../../../courses.html"><FONT color=white><B>Courses</B></FONT></A></TD>
+<TD><A HREF="../../../math.html"><FONT color=white><B>Math Links</B></FONT></A></TD>
+<TD><A HREF="../../../resources.html"><FONT color=white><B>Resources</B></FONT></A></TD>
+<TD><A HREF="../../../applets.html"><FONT color=white><B>Java Applets</B></FONT></A></TD>
+</TR>
+</TABLE>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD colspan=2>
+<!- ------------------------------------------------------------------------ ->
+
+
+<B><FONT SIZE=+1>Combinatorial Aspects of the Lascoux-Sch&uuml;tzenberger Tree</FONT></B>
+
+<P>
+<B>Contents</B>
+<UL> 
+<LI><A HREF="index.html#history">A Bit of History</A>
+<LI><A HREF="applet.html">The Applet</A>
+<LI><A HREF="bijection.html">The Bijection</A>
+</UL>
+
+
+<A name=history></A>
+<B>A Bit of History</B>
+<P>
+In a remarkable seminal paper  (Europ. J. Comb. <B>5</B> (1984), 359-372) R. Stanley
+set himself the task of enumerating, for a given
+<IMG ALIGN=MIDDLE ALT="tex2html_wrap_inline202" SRC="images/img1.gif">
+the collection
+<IMG ALIGN=MIDDLE ALT="tex2html_wrap_inline204" SRC="images/img2.gif">
+of the reduced words yielding  
+<IMG ALT="sigma" SRC="images/sigma.gif">. 
+To be precise, for a given word
+<IMG WIDTH=107 HEIGHT=14 ALIGN=MIDDLE ALT="tex2html_wrap_inline208" SRC="images/img4.gif">,
+let us set 
+
+<P>
+<CENTER><IMG ALT="Gessel Quasi-symmetric Functions" SRC="images/gessel.gif"></CENTER>
+<P>
+
+These polynomials are known as the ``<EM>Gessel quasi-symmetric functions</EM>''.
+Stanley was led to the bold step of setting for each
+<IMG WIDTH=45 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline202" SRC="images/img1.gif">
+with
+<IMG WIDTH=71 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline214" SRC="images/img6.gif">
+and <I>N</I> large enough
+
+<P>
+<CENTER><IMG ALT="Stanley Symmetric Function" SRC="images/stanley.gif"></CENTER>
+<P>
+
+Stanley proves that
+<IMG WIDTH=16 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline220" SRC="images/img8.gif">
+is symmetric and conjectures that it has a Schur function expansion of the form
+
+<P>
+<CENTER><IMG ALT="Schur positivity" SRC="images/schurpositive.gif"></CENTER>
+<P>
+
+with  coeffcients
+<IMG WIDTH=70 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline224" SRC="images/img10.gif">
+and
+<IMG WIDTH=29 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline86" SRC="images/img11.gif">
+a suitable collection of partitions of the integer  
+<IMG WIDTH=43 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline228" SRC="images/img12.gif">. 
+Stanley proves this conjecture for the so called ``<EM>vexillary </EM>'' permutations. These 
+are the permutations that avoid the pattern ``2143''.  He also shows that for these permutations,  
+<IMG WIDTH=29 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline86" SRC="images/img11.gif">
+reduces to a single term, in fact
+<IMG WIDTH=77 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline234" SRC="images/img13.gif">, 
+where for a permutation  
+<IMG ALT="sigma" SRC="images/sigma.gif">,
+the symbol
+<IMG WIDTH=29 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline238" SRC="images/img14.gif">
+denotes  the partition obtained by rearranging the inversion code of  
+<IMG ALT="sigma" SRC="images/sigma.gif">.
+In the years that followed there appeared several proofs of Stanley's conjecture . Two 
+combinatorial proofs were given by Edelman-Greene (Advances in  Math.  Math. <B>63</B> 
+(1987), 42-99)  and Lascoux-Sch&#252;tzenberger (C. R. Acad. Sci. Paris <B>295</B> (1982)
+ 629-633). These two proofs used essentially the same basic idea.
+
+<P>
+In a course given at UCSD in winter 2001, Garsia noted that a new algorithm for the calculation
+of Littlewood-Richardson coefficients given by Lascoux-Sch&#252;tzenberger in  (Letters in Math.
+Physics <B>10</B>  (1985) 111-124) yielded what may certainly be viewed as the most fascinating
+approach to determining the coefficients in  (1).  Garsia's proof of the validity of this
+algorithm may be found in full detail in the manuscript <A HREF="http://schur.ucsd.edu/~garsia/saga.pdf">The
+Saga of Reduced Factorizations of Elements of the Symmetric Group</A>, which gives a complete
+account of the material covered in the course. Since Garsia's proof relies on the theory of Schubert
+polynomials it cannot be considered elementary. A paper giving a completely elementary, purely
+combinatorial proof of the validity of the algorithm will soon be available.
+<P>
+
+This proof is based on the construction, for each permutation
+<IMG WIDTH=45 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline202" SRC="images/img1.gif">, 
+of a Robinson-Schensted-like correspondence mapping each word  
+<IMG WIDTH=89 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline244" SRC="images/img15.gif">
+into the pair 
+<IMG WIDTH=86 HEIGHT=29 ALIGN=MIDDLE ALT="tex2html_wrap_inline246" SRC="images/img16.gif">
+where  <IMG WIDTH=32 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline248" SRC="images/img17.gif">
+is a ``<EM> Grassmanian</EM>'' permutation (i.e. a permutation with only one descent) and
+<I>T</I>(<I>w</I>) is a standard tableau of shape
+<IMG WIDTH=57 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline254" SRC="images/img18.gif">.
+The following Applet carries out this correspondence.  Experimenting with this Applet the user may
+notice that for the permutation
+<IMG WIDTH=135 HEIGHT=15 ALIGN=MIDDLE ALT="tex2html_wrap_inline256" SRC="images/img19.gif">
+the map 
+<IMG WIDTH=122 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline258" SRC="images/img20.gif">
+is essentially the Schensted correspondence where <I>T</I>(<I>w</I>) is the ``<EM>right
+tableau</EM>'', on the other hand for the permutation
+<IMG WIDTH=104 HEIGHT=14 ALIGN=BOTTOM ALT="tex2html_wrap_inline120" SRC="images/img21.gif">
+the map turns out to be essentially the Edelman-Greene correspondence. The Applet starts from a line
+diagram of a word
+<IMG WIDTH=89 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline244" SRC="images/img15.gif">
+and ends with the line diagram of a word  
+<IMG WIDTH=117 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline124" SRC="images/img22.gif">. 
+As a result one obtains a very beautiful combinatorial proof and interpretation for the coefficients 
+<IMG WIDTH=35 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline268" SRC="images/img23.gif">
+in  (1). 
+
+<P>
+To be precise, the  bijection proceeds along the branches of a tree associated to each permutation by
+Lascoux-Sch&#252;tzenberger. So a few words describing this tree should perhaps be included here.
+For this we need some notation.  To begin let
+<IMG WIDTH=17 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline270" SRC="images/img24.gif">
+denote the transposition (<I>r</I>,<I>s</I>).  Next for a permutation 
+<IMG WIDTH=44 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline274" SRC="images/img25.gif">
+and an integer
+<IMG WIDTH=66 HEIGHT=24 ALIGN=MIDDLE ALT="tex2html_wrap_inline276" SRC="images/img26.gif">
+set
+
+<P>
+<CENTER><IMG ALT="Phi(u,r)" SRC="images/phi.gif"> </CENTER>
+<P>
+
+For a given permutation
+<IMG WIDTH=102 HEIGHT=14 ALIGN=MIDDLE ALT="tex2html_wrap_inline138" SRC="images/img28.gif"  >
+set  
+<IMG WIDTH=298 HEIGHT=46 ALIGN=MIDDLE ALT="tex2html_wrap_inline140" SRC="images/img29.gif"  >.
+This given, the children of a permutation
+<IMG ALT="sigma" SRC="images/sigma.gif">
+in the LS tree are obtained by the following ``<EM>Branching Algorithm</EM>''
+<P>
+<OL>
+<LI> Locate the last descent of
+<IMG ALT="sigma" SRC="images/sigma.gif">.
+If this occurs at <I>r</I> then let <I>s</I> be the largest index such that <I>s</I>&gt;<I>r</I> and 
+<IMG WIDTH=50 HEIGHT=18 ALIGN=MIDDLE ALT="tex2html_wrap_inline152" SRC="images/img30.gif">.
+
+<LI> Set
+<IMG WIDTH=75 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline296" SRC="images/img31.gif">.
+
+<LI> If
+<IMG WIDTH=75 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline298" SRC="images/img32.gif">
+then the children of  
+<IMG ALT="sigma" SRC="images/sigma.gif"> 
+are the permutations
+<IMG WIDTH=80 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline302" SRC="images/img33.gif"  >.
+Otherwise
+<IMG ALT="sigma" SRC="images/sigma.gif">
+has only one child, namely
+<IMG WIDTH=121 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline310" SRC="images/img34.gif"  > .
+
+</OL>
+
+
+<P>
+It can be shown that if we go down a tree constructed by this branching
+process, starting from a root
+<IMG WIDTH=8 HEIGHT=7 ALIGN=BOTTOM ALT="tex2html_wrap_inline312" SRC="images/img35.gif">
+with first descent at
+<IMG WIDTH=12 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline314" SRC="images/img36.gif">
+and last descent at  
+<IMG WIDTH=13 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline316" SRC="images/img37.gif">
+then in no more than
+<IMG WIDTH=106 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline318" SRC="images/img38.gif">
+steps we must encounter a Grassmanian permutation. This given, the LS tree of a permutation
+<IMG WIDTH=8 HEIGHT=7 ALIGN=BOTTOM ALT="tex2html_wrap_inline312" SRC="images/img35.gif">
+is simply the tree constructed by this branching process with the requirement to stop the first time
+we hit a Grassmanian child. In this manner all the leaves will be Grassmanian. Denoting their
+collection 
+``<IMG WIDTH=70 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline322" SRC="images/img39.gif">'',
+it is shown in <A HREF="http://schur.ucsd.edu/~garsia/saga.pdf">SAGA</A>  that we have the following remarkable
+fact
+
+<P>
+<CENTER><IMG ALT="Theorem" SRC="images/theorem.gif"></CENTER>
+<P>
+
+Since Grassanian permutations are vexillary, it follows from Stanley's theorem
+that for each of these leaves we have
+<IMG WIDTH=77 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline326" SRC="images/img41.gif">.
+Thus (2) not only gives the Schur function expansion of 
+<IMG WIDTH=17 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline328" SRC="images/img42.gif">
+but it yields a beautiful combinatorial interpretation for the coefficients. Now  (2) itself is but
+an immediate consequence of the following key identity 
+
+<P>
+<CENTER><IMG ALT="Identity" SRC="images/identity.gif"  ></CENTER>
+<P>
+
+where
+<IMG WIDTH=42 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline332" SRC="images/img44.gif">
+here denotes the collection of children of
+<IMG ALT="sigma" SRC="images/sigma.gif">.
+In <A HREF="http://schur.ucsd.edu/~garsia/saga.pdf">SAGA</A> this identity is derived from Monk's rule for
+Schubert polynomials. 
+
+<P>
+Now to prove (3) (and therefore also (2)) combinatorially all we need to do is
+construct a descent preserving bijection between the following two sets of words
+
+<P>
+<CENTER><IMG ALT="Sets 1" SRC="images/sets1.gif"></CENTER> 
+<P>
+
+Moreover once this bijection is constructed, we can start with
+<IMG WIDTH=90 HEIGHT=26 ALIGN=MIDDLE ALT="tex2html_wrap_inline338" SRC="images/img46.gif">
+and, by iteration, go  down the LS tree of
+<IMG WIDTH=8 HEIGHT=7 ALIGN=BOTTOM ALT="tex2html_wrap_inline312" SRC="images/img35.gif">
+until we reach the word of a leaf. In ultimate analysis we obtain in this manner a  descent
+preserving bijection between the following two sets of words 
+
+<P>
+<CENTER><IMG ALT="Sets 2" SRC="images/sets2.gif"></CENTER>
+<P>
+
+The <A = HREF="applet.html">Applet</A> carries out this <A HREF="bijection.html">bijection</A>. 
+
+ 
+
+</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

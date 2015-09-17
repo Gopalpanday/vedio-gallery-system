@@ -1,0 +1,98 @@
+<HTML>
+<HEAD>
+<LINK REL="STYLESHEET"  HREF="../../../style.css" TYPE="text/css">
+<LINK REL="SHORTCUT ICON" HREF="../../../images/favicon.ico">
+<TITLE>Constructing A Square</TITLE>
+</HEAD>
+
+<BODY bgcolor=white vlink="blue">
+
+<!- ---------------------------- PAGE HEADER ------------------------------- ->
+<TABLE cellpadding=0 cellspacing=0 border=0 width=700>
+<TR>
+<TD colspan=2>
+<FONT size=+2><B>David Little</B></FONT>
+</TD>
+</TR>
+<TR><TD valign=top>
+<A HREF="http://www.math.psu.edu">Mathematics Department</A><BR> 
+<A HREF="http://www.psu.edu">Penn State University</A><BR>
+Eberly College of Science<BR>
+University Park, PA  16802<BR>
+</TD>
+<TD align=right valign=top>
+Office: <A HREF="http://www.our.psu.edu/soc_maps/mcalstr.html">403 McAllister</A><BR>
+Phone: (814) 865-3329<BR>
+Fax: (814) 865-3735<BR>
+e-mail:<A HREF="mailto:dlittle@psu.edu">dlittle@psu.edu</A><BR>
+</TD>
+</TR>
+<!- ------------------------------------------------------------------------ ->
+<TR>
+<TD valign=top align=left colspan=2>
+<BR>
+<TABLE width=100% border=0 cellspacing=0 cellpadding=0>
+<TR align=center bgcolor=#291C5E>
+<TD><A HREF="../../../index.html"><FONT color=white><B>Home</B></FONT></A></TD>
+<TD><A HREF="../../../courses.html"><FONT color=white><B>Courses</B></FONT></A></TD>
+<TD><A HREF="../../../math.html"><FONT color=white><B>Math Links</B></FONT></A></TD>
+<TD><A HREF="../../../resources.html"><FONT color=white><B>Resources</B></FONT></A></TD>
+<TD><A HREF="../../../applets.html"><FONT color=white><B>Java Applets</B></FONT></A></TD>
+</TR>
+</TABLE>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD colspan=2>
+<!- ------------------------------------------------------------------------ ->
+
+<B><FONT size=+1>Constructing A Square</FONT></B>
+
+<BR>
+To draw a square that has the red and blue points as adjacent corners, first draw a circle centered at the blue point and passing through the red point.  Next, draw circle centered at the red point and passing through the blue point.
+<P>
+Now draw a line perpendicular to the line segment passing through the blue point and another line perpendicular to the line segment passing through the red point.
+
+<P>
+To draw a square that has the red and blue points as opposite corners, first draw a line segment connecting the two points.  Next, find the midpoint of the two points.
+<P>
+Next, draw circle centered and the midpoint going through the blue (or red) point.
+<P>
+Next draw a line perpendicular to the line segment through the midpoint.
+<P>
+Intersect line and circle.  The two points of intersection of the line and circle and the original red and blue points form the corners of a square.  Can you explain why?
+
+<CENTER>
+<TABLE border=1>
+<TR><TD>
+<APPLET CODEBASE="class" CODE="http://www.personal.psu.edu/dpl14/java/geometry/euclidean/EuclideanToolbox.class" width=400 height=100>
+<PARAM NAME=mode VALUE="UNLOCKED">
+<PARAM NAME=object_1 VALUE="POINT(180,175,blue)">
+<PARAM NAME=object_2 VALUE="POINT(370,175,red)">
+<PARAM NAME="choice_1" VALUE="Midpoint">
+<PARAM NAME="choice_2" VALUE="Perpendicular Line">
+<PARAM NAME=splash_1 VALUE="POINT(200,50,blue)">
+<PARAM NAME=splash_2 VALUE="POINT(200,50,red)">
+<PARAM NAME=splash_3 VALUE="LINE_SEGMENT(1,2,black)">
+<PARAM NAME=splash_4 VALUE="CIRCLE(1,2,lightGray)">
+<PARAM NAME=splash_5 VALUE="CIRCLE(2,1,lightGray)">
+<PARAM NAME=splash_6 VALUE="PERPENDICULAR_LINE(1,3,clear)">
+<PARAM NAME=splash_7 VALUE="PERPENDICULAR_LINE(2,3,clear)">
+<PARAM NAME=splash_8 VALUE="LINE_CIRCLE_INTERSECTION(6,4,1,black)">
+<PARAM NAME=splash_9 VALUE="LINE_CIRCLE_INTERSECTION(7,5,1,black)">
+<PARAM NAME=splash_10 VALUE="LINE_SEGMENT(1,8,black)">
+<PARAM NAME=splash_11 VALUE="LINE_SEGMENT(2,9,black)">
+<PARAM NAME=splash_12 VALUE="LINE_SEGMENT(8,9,black)">
+</APPLET>
+</TD></TR>
+</TABLE>
+</CENTER>
+
+<HR>
+</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

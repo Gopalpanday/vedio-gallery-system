@@ -1,0 +1,165 @@
+body{
+    background-image: url(../../Images/2.jpg);
+}
+
+.containerVideoA{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 220px;
+    height: 230px;
+    border-radius: 25px;
+    border-left: 25px solid brown;
+    border-right: 25px solid brown;
+}
+
+.VideoA{
+    position: absolute;
+    left: 10px;
+    top: 35px;
+    border-radius: 25px;
+}
+
+.headerVideoA{
+    background-color: brown;
+    text-align: center;
+}
+
+.headerVideoA label{
+    color: white;
+    font-family: cambria;
+    text-align: center;
+}
+
+.headerVideoA span{
+    color: white;
+    font-family: cambria;
+    font-size: large;
+    text-align: center;
+    width: 20px;
+    border-radius: 10px;
+    background-color: goldenrod;
+    float: right;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.headerVideoA span:hover{
+    cursor: pointer;
+    color: white;
+    background: black;
+}
+
+.footerVideoA{
+    background-color: brown;
+    position: absolute;
+    top: 190px;
+    width: 100%;
+    height: 40px;
+}
+.footerVideoA label{
+    color: white;
+    font-family: Cambria;
+    float: right;
+}
+.footerVideoA span{
+    color: white;
+    font-family: cambria;
+    text-align: center;
+    width: 20px;
+    border-radius: 5px;
+    background-color: purple;
+    float: left;
+    text-align: center;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+.footerVideoA span:hover{
+    cursor: pointer;
+    color: white;
+    background: black;
+}
+
+
+
+
+.containerVideoB{
+    position: absolute;
+    left: 10px;
+    top: 250px;
+    width: 220px;
+    height: 230px;
+    border-radius: 25px;
+    border-left: 25px solid brown;
+    border-right: 25px solid brown;
+}
+
+.VideoB{
+    position: absolute;
+    left: 10px;
+    top: 35px;
+    border-radius: 25px;
+}
+
+.headerVideoB{
+    background-color: brown;
+    text-align: center;
+}
+
+.headerVideoB label{
+    color: white;
+    font-family: cambria;
+    text-align: center;
+}
+
+.headerVideoB span{
+    color: white;
+    font-family: cambria;
+    font-size: large;
+    text-align: center;
+    width: 20px;
+    border-radius: 10px;
+    background-color: goldenrod;
+    float: right;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.headerVideoB span:hover{
+    cursor: pointer;
+    color: white;
+    background: black;
+}
+
+.footerVideoB{
+    background-color: brown;
+    position: absolute;
+    top: 190px;
+    width: 100%;
+    height: 40px;
+}
+
+.footerVideoB label{
+    color: white;
+    font-family: Cambria;
+    float: right;
+}
+.footerVideoB span{
+    color: white;
+    font-family: cambria;
+    text-align: center;
+    width: 20px;
+    border-radius: 5px;
+    background-color: purple;
+    float: left;
+    text-align: center;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+.footerVideoB span:hover{
+    cursor: pointer;
+    color: white;
+    background: black;
+}

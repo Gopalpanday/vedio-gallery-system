@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<title>Refracting astronomical telescope</title>
+<meta name="description" content="Java applet: Refracting astronomical telescope">
+<meta name="author" content="Walter Fendt">
+<meta name="keywords" content="physics, optics, Kepler, telescope">
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table width="100%" bgcolor="#0000FF" cellpadding="10"><tr><td>
+<table width="100%" bgcolor="#FFFF00" cellpadding="5"><tr><td align="center">
+<font size="+2"><b>Refracting Astronomical Telescope</b></font>
+</td></tr></table>
+</td></tr></table>
+
+<p><b>This Java applet simulates a simple <em>refracting astronomical (inverting) telescope</em>, consisting of two lenses which are called the <em>objective</em> and the <em>eyepiece (ocular)</em>. The rays of light incident from the left on the objective are refracted by the objectice and the eyepiece and reach the eye of the person looking through the telescope (to the right of the eyepiece). Notice that the red-coloured lines of the simulation don't exactly correspond to the real rays which are refracted at both surfaces of a lens. The simplifying thin-lens approximation assumes a deviation at the plane of symmetry instead. If the focal length of the objective (f<sub>1</sub>) is bigger than the focal length of the eyepiece (f<sub>2</sub>), the refracting astronomical telescope produces an enlarged, inverted image.</b></p>
+
+<p><b>It is possible to vary the focal lengths of objective and eyepiece from <bobr>0.05 m</nobr> to <nobr>0.5 m</nobr> by using the text fields of the panel (don't forget to press the &quot;Enter&quot; key!). In addition, you can modify the direction of the rays by dragging the mouse. The program will calculate for both objective and eyepiece the angles between the rays of light and the optical axis (marked with blue and green colour) and the magnification. As an example, the applet shows the six brightest stars of the Pleiades, viewed with the unaided eye (bottom left) and through the telescope (bottom right).</b></p>
+
+<p align="center">
+<applet code="Refraktor.class" codebase="../phcl" width="700" height="380">
+<param name="language" value="English">
+</applet></p>
+
+<p><b>The magnification of the refracting astronomical telescope can be obtained with the following approximate formula (for small angles):</b></p>
+
+<p align="center">
+<table align="center" bgcolor="#00FFFF" border="1" cellpadding="5"><tr><td>
+<b>v = f<sub>1</sub> / f<sub>2</sub></b>
+</td></tr></table></p>
+
+<p><pre>
+v .... Magnification
+f<sub>1</sub> ... Focal length of the objective
+f<sub>2</sub> ... Focal length of the eyepiece
+</pre></p>
+
+
+</body>
+
+</html>

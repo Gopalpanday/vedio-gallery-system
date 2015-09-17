@@ -1,0 +1,107 @@
+<HTML>
+<HEAD>
+<LINK REL="STYLESHEET"  HREF="../../../style.css" TYPE="text/css">
+<LINK REL="SHORTCUT ICON" HREF="../../../images/favicon.ico">
+<TITLE>Monoalphabetic Substitution</TITLE>
+</HEAD>
+
+<BODY bgcolor=white vlink="blue">
+
+
+<!- ---------------------------- PAGE HEADER ------------------------------- ->
+<TABLE cellpadding=0 cellspacing=0 border=0 width=700>
+<TR>
+<TD colspan=2>
+<FONT size=+2><B>David Little</B></FONT>
+</TD>
+</TR>
+<TR><TD valign=top>
+<A HREF="http://www.math.psu.edu">Mathematics Department</A><BR> 
+<A HREF="http://www.psu.edu">Penn State University</A><BR>
+Eberly College of Science<BR>
+University Park, PA  16802<BR>
+</TD>
+<TD align=right valign=top>
+Office: 403 McAllister<BR>
+Phone: (814) 865-3329<BR>
+Fax: (814) 865-3735<BR>
+e-mail:<A HREF="mailto:dlittle@psu.edu">dlittle@psu.edu</A><BR>
+</TD>
+</TR>
+<!- ------------------------------------------------------------------------ ->
+<TR>
+<TD valign=top align=left colspan=2>
+<BR>
+<TABLE width=100% border=0 cellspacing=0 cellpadding=0>
+<TR align=center bgcolor=#291C5E>
+<TD><A HREF="../../../index.html"><FONT color=white><B>Home</B></FONT></A></TD>
+<TD><A HREF="../../../courses.html"><FONT color=white><B>Courses</B></FONT></A></TD>
+<TD><A HREF="../../../math.html"><FONT color=white><B>Math Links</B></FONT></A></TD>
+<TD><A HREF="../../../resources.html"><FONT color=white><B>Resources</B></FONT></A></TD>
+<TD><A HREF="../../../applets.html"><FONT color=white><B>Java Applets</B></FONT></A></TD>
+</TR>
+</TABLE>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD colspan=2>
+<!- ------------------------------------------------------------------------ ->
+
+<B><FONT size=+1>Monoalphabetic Substitutions: A Known Plaintext Attack</FONT></B>
+<BR><I> by Adriano M. Garsia</I>
+
+
+<P>
+We recall that Monoalphabetic substitution is a system of encryption where every occurrence of a particular plaintext letter is replaced by a cyphertext letter.  For instance, Caesar substitution is monoalphabetic while Vigenere is not. A 2x2 Hill encryption is a monoalphabetic substitution acting on pairs of letters.  Keep in mind that the definition of a monoalphabetic substitution allows for the possibility that two distinct plaintext letters are replaced by the same cyphertext letter.  However, to break this system using a known plaintext attack, we <I>will</I> require that any two distinct plaintext letters are replaced by two distinct cyphertext letters. 
+
+<P>
+To encrypt (decrypt) using the Applet below, simply cut and paste your plaintext (cyphertext) into the textarea, select Encrypt (Decrypt) and start entering your key.  The plaintext (cyphertext) will be encoded (decoded) as you enter the key.  To enter a key, first click in the square below (above) the plaintext (cyphertext) letter you want to encrypt (decrypt).  The square should now be highlighted in yellow.  Now type the corresponding cyphertext (plaintext) letter.  The square to the right should now be highlighted.  To delete a letter, click on the appropriate box and simply press <I>Back Space</I> or <I>Del</I>.  The <I>Space Bar</I> and <I>Arrow keys</I> can be used to cycle through the key without editing it.  Notice that letters that do not yet occur in the key are shaded gray.
+
+<P><B>IMPORTANT</B>: The applet allows for the partial encryption/decryption of a monoalphabetic substitution.  To this end, we will use the convention that plaintext letters are always in uppercase and cyphertext letters are always in lowercase.
+
+<P>To break a monoalphabetic substitution using a known plaintext attack,  we can take advantage of the fact that any pair of letters in the original plaintext message is replaced by a pair of letters <I>with the same pattern</I>.  In other words,  if two letters of paintext are distinct, then their corresponding letters of cyphertext must also be distinct.  To illustrate this, if we know that the word "AMMUNITION" appears in the plaintext, then we can look for strings of 10 consecutive letters of cyphertext that have the following pattern:
+
+<UL>
+<LI>The 2<SUP>nd</SUP> and 3<SUP>rd</SUP> letters are the same
+<LI>The 5<SUP>th</SUP> and 10<SUP>th</SUP> letters are the same (and different from the 2<SUP>nd</SUP> letter)
+<LI>The 6<SUP>th</SUP> and 8<SUP>th</SUP> letters are the same (and different from the 2<SUP>nd</SUP> and 5<SUP>th</SUP> letters)
+<LI>All other letters are distinct.
+</UL>
+
+Once we have found all possible matches, we can use a chi-squared statistic to determine which one is the most likely match for the known plaintext.
+
+<P>The Applet below is programmed to illustrate this codebreaking process. 
+
+<UL>
+<LI>Upon pressing the <I>Random Cyphertext</I> button, the Applet will display some text which was encrypted using a Monoalphabetic Substitution with a randomly selected key.
+
+<LI>Press the <I>Break</I> button.  Enter a word that you know/believe to be part of the original plaintext message and press <I>Search</I> or the <I>Return</I> key.  The Applet will calculate all possible matches for the search word and display a list (in groups of 10) in increasing order according to the corresponding statistic.
+You may also sort the list in decreasing order according to the number of times a match occurs.  Press the "Frequency" button to do so.
+<LI>To see a list of the single letter frequencies taken from the cyphertext, enter a one letter search word and press <I>Search</I>
+
+<LI>Some possible matches might conflict with the parts of the key you have already determined.  In this case, one asterisk is placed next to the statistic for each conflict it has with your current key.  For example, suppose that you have already determined T->q and E->j and you search for the word "THE".  You should only be interested in the possible matches of the form "q_j".  So if "qfk" is a possible match, the Applet will put one asterisk (*) next to this match since it conflicts with your assumption that E->j.  Likewise, "qjy" would have two asterisks next to it since it violates E->j in two different ways, namely H->j and E->y.
+
+<LI>To list only those possible matches that do not conflict with the current key, select "No" next to "Show All".
+
+<LI>Once you have selected a possible match for your search word, press the <I>Okay</I> button, and this selection will be incorporated into the current key and the message will be partially decrypted.
+
+<LI>Now, hopefully, you will have enough of the message decoded to start making some guesses as to what other letters of cyphertext might be.
+
+
+</UL>
+
+<A HREF="example.html">Here's</A> an example of how this codebreaking process might take place.
+<P>
+<CENTER>
+<APPLET CODEBASE="class" CODE="http://www.personal.psu.edu/dpl14/java/cryptography/monoalphabetic/Monoalphabetic.class" WIDTH=600 HEIGHT=400></APPLET>
+</CENTER>
+<HR>
+<A HREF="Monoalphabetic.zip">Download</A> this applet for off-line viewing (includes source code)
+
+<HR>
+</TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>

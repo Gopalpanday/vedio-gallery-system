@@ -1,0 +1,132 @@
+<HTML>
+<HEAD>
+<LINK REL="STYLESHEET"  HREF="../../../style.css" TYPE="text/css">
+<LINK REL="SHORTCUT ICON" HREF="../../../images/favicon.ico">
+<TITLE>The Canonical Roulette</TITLE>
+</HEAD>
+
+<BODY bgcolor=white vlink="blue">
+
+<!- ---------------------------- PAGE HEADER ------------------------------- ->
+<TABLE cellpadding=0 cellspacing=0 border=0 width=700>
+<TR>
+<TD colspan=2>
+<FONT size=+2><B>David Little</B></FONT>
+</TD>
+</TR>
+<TR><TD valign=top>
+<A HREF="http://www.math.psu.edu">Mathematics Department</A><BR> 
+<A HREF="http://www.psu.edu">Penn State University</A><BR>
+Eberly College of Science<BR>
+University Park, PA  16802<BR>
+</TD>
+<TD align=right valign=top>
+Office: <A HREF="http://www.our.psu.edu/soc_maps/mcalstr.html">403 McAllister</A><BR>
+Phone: (814) 865-3329<BR>
+Fax: (814) 865-3735<BR>
+e-mail:<A HREF="mailto:dlittle@psu.edu">dlittle@psu.edu</A><BR>
+</TD>
+</TR>
+<!- ------------------------------------------------------------------------ ->
+<TR>
+<TD valign=top align=left colspan=2>
+<BR>
+<TABLE width=100% border=0 cellspacing=0 cellpadding=0>
+<TR align=center bgcolor=#291C5E>
+<TD><A HREF="../../../index.html"><FONT color=white><B>Home</B></FONT></A></TD>
+<TD><A HREF="../../../courses.html"><FONT color=white><B>Courses</B></FONT></A></TD>
+<TD><A HREF="../../../math.html"><FONT color=white><B>Math Links</B></FONT></A></TD>
+<TD><A HREF="../../../resources.html"><FONT color=white><B>Resources</B></FONT></A></TD>
+<TD><A HREF="../../../applets.html"><FONT color=white><B>Java Applets</B></FONT></A></TD>
+</TR>
+</TABLE>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD colspan=2>
+<!- ------------------------------------------------------------------------ ->
+
+<B><FONT size=+1>The Canonical Roulette</FONT></B>
+
+<P>
+<CENTER>
+<TABLE BORDER=1>
+<TR><TD>
+<APPLET CODEBASE="class"  CODE="http://www.personal.psu.edu/dpl14/java/probability/canonicalroulette/CASA.class"  width=400 height=100>
+</APPLET>
+</TD></TR>
+</TABLE>
+</CENTER>
+
+
+
+<P>
+<FONT size=+1><B>Canonical Roulette</B></FONT>
+<P>
+
+<UL>
+<LI><U>Spin</U> - spins the wheel; once the wheel stops spinning, a ball is released from the left margin of the Distribution Function graph according to the value of the Canonical Roulette.  The ball travels horizontally until hitting the graph of the Distribution Function, at which point it falls down vertically onto the histogram. 
+<LI><U>Random</U> - equivalent to "Spin", however you don't have to wait for the Canonical Roulette to stop spinning.
+</UL>
+
+<B>Controls</B>
+<UL>
+<LI><U>Start/Stop</U> - begin/end collecting data at a very high rate.
+<LI><U>Clear Data</U> - removes all data currently displayed in the histogram.
+<LI><U>Number of Bins</U> - number of bins used to draw a histogram of the collected data.
+</UL>
+
+<P>
+<B>Distribution Function</B><BR>
+Choose from among several Discrete/Continuous Distributions (see below).  Once a distribution has been selected, the corresponding graph will be displayed.  This graph is used to create data in the following manner.  First, the Canonical Roulette is used to create a random real number between 0 and 1 with uniform distribution.  Second, a ball is released along the left boundary of the graph of the Distribution Function.  The height of the ball (as a proportional of the height of the left boundary) is given by the outcome of the Canonical Roulette.  The ball then travels horizontally to the right until it comes in contact with the graph of the Distribution Function, at which point it falls straight down onto the histogram.
+
+
+<P>
+<B>Probability Function</B><BR>
+Choose from among several Discrete/Continuous Probability Functions (see below).  Once a probability function has been selected, the corresponding graph will be displayed.  The graph can be used to compare the histogram of the actual data collected with the theoretical values predicted by the probability function.
+
+
+<P>
+<B>Discrete Distributions</B>
+<UL>
+<LI>Binomial - the number of successes out of <I>n</I> independent trials of a Bernoulli experiment, where <I>p</I> is the probability of success on each trial.
+
+<LI>Geometric - the number of trials of a Bernoulli experiment before the first success, where <I>p</I> is the probability of success on each trial.
+
+<LI>Hypergeometric - the number of red balls drawn from an urn containing <I>r</I> red balls and <I>b</I> blue balls.  The balls are drawn from the urn <I>n</I> at a time without replacement.
+
+<LI>Negative Binomial - the number of trials (in excess of <I>r</I>) of a Bernoulli experiment until the <I>r</I>th success, where <I>p</I> is the probability of success on each trial.
+
+<LI>Poisson - the number of occurrences of an event over a fixed time interval, where <I>lambda</I> is the average rate at which the event occurs.
+</UL>
+
+<B>Continuous Distributions</B>
+<UL>
+<LI>Arcsine - 
+<LI>Beta - 
+<LI>Cauchy -
+<LI>Chi squared -
+<LI>Exponential -
+<LI>Gamma - 
+<LI>Log Normal -
+<LI>Maxwell - 
+<LI>Normal -
+<LI>Pareto - used to model random variables that take on small values with high probability and large values with low probability.  For example, the idea that 80% of the wealth is owned by merely 20% of a population implies that the vast majority of the population has a small personal wealth.
+
+<LI>Rayleigh - 
+<LI>Triangular - 
+<LI>Uniform - 
+</UL>
+
+<HR>
+&copy; 2005 David P. Little<BR>
+<HR>
+
+
+</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

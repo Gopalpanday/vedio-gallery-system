@@ -1,0 +1,105 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Life game</title>
+
+</head><body bgcolor="#ffffff">
+
+<h1>Life game</h1><br>
+<hr>
+<h2>Introduction</h2>
+<center>
+<table border="0" width="600">
+<tbody><tr><td>
+Here is a lattice similar to a chess-board.
+The lattice compromises of cells in which there are some creatures living (but only ONE creature can inhabit ONE cell.)
+A cell which is inhabited by a creature is "on" (colored blue) and an empty cell with no creature is "off" (colored yellow).
+</td>
+<td>
+<img src="life_game_files/1.gif">
+</td>
+</tr></tbody></table>
+</center>
+<br><br>
+<h2>Rules</h2>
+<center>
+<table border="0" width="600">
+<tbody><tr><td>
+
+
+Each cell is surrounded by eight neighboring cells.
+The creatures increase or decrease in the next step according to the following rules:
+<li>If a cell is "on"<br>
+When two or three of the neighboring cells are "on" , the cell remains "on".
+In other cases the cell becomes "off".
+</li><li>If a cell is "off"<br>
+When three of the neighboring cells are "on" , the cell also becomes "on".
+In other cases the cell remains "off".
+</li></td>
+<td>
+<img src="life_game_files/2.gif">
+</td>
+</tr></tbody></table>     
+</center>
+<hr>
+<h2>Applet</h2>
+<center>
+<table border="0" width="600">
+<tbody><tr><td>
+<h3>How to use this applet</h3>
+1. Click cells to define initial condition or press [A] to [F] button. <br>
+2. Press [Next] button to go to the next step.<br>
+3. Press [Next] button several times.<br>
+3. Press [Again] button to go back to initial condition.<br>
+4. Press [Clear] button to make all cells "off".  
+</td>
+<td>
+<applet code="life_game_files/life_game.class" aligne="left" height="300" width="450">
+</applet>
+</td>
+</tr></tbody></table>
+</center><hr>
+<h2>Experiment
+<center>
+<table border="1">
+<tbody><tr><td>
+<center>A</center>
+</td>
+<td>
+<center>B</center>
+</td>
+<td>
+<center>C</center>
+</td>
+<td>
+<center>D</center>
+</td>
+<td>
+<center>E</center>
+</td>
+<td>
+<center>F</center>
+</td>
+</tr><tr>
+<td>
+<img src="life_game_files/4.gif">
+</td>
+<td>
+<img src="life_game_files/5.gif">
+</td>
+<td>
+<img src="life_game_files/6.gif">
+</td>
+<td>
+<img src="life_game_files/7.gif">
+</td>
+<td>
+<img src="life_game_files/8.gif">
+</td>
+<td>
+<img src="life_game_files/9.gif">
+</td>
+</tr></tbody></table>
+</center>
+<hr>
+
+</h2></body></html>

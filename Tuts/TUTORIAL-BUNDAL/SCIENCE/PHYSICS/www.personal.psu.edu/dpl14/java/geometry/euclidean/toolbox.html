@@ -1,0 +1,227 @@
+<HTML>
+<HEAD>
+<LINK REL="STYLESHEET"  HREF="../../../style.css" TYPE="text/css">
+<LINK REL="SHORTCUT ICON" HREF="../../../images/favicon.ico">
+<TITLE>Euclidean Geometry</TITLE>
+</HEAD>
+
+<BODY bgcolor=white vlink="blue">
+
+<!- ---------------------------- PAGE HEADER ------------------------------- ->
+<TABLE cellpadding=0 cellspacing=0 border=0 width=700>
+<TR>
+<TD colspan=2>
+<FONT size=+2><B>David Little</B></FONT>
+</TD>
+</TR>
+<TR><TD valign=top>
+<A HREF="http://www.math.psu.edu">Mathematics Department</A><BR> 
+<A HREF="http://www.psu.edu">Penn State University</A><BR>
+Eberly College of Science<BR>
+University Park, PA  16802<BR>
+</TD>
+<TD align=right valign=top>
+Office: <A HREF="http://www.our.psu.edu/soc_maps/mcalstr.html">403 McAllister</A><BR>
+Phone: (814) 865-3329<BR>
+Fax: (814) 865-3735<BR>
+e-mail:<A HREF="mailto:dlittle@psu.edu">dlittle@psu.edu</A><BR>
+</TD>
+</TR>
+<!- ------------------------------------------------------------------------ ->
+<TR>
+<TD valign=top align=left colspan=2>
+<BR>
+<TABLE width=100% border=0 cellspacing=0 cellpadding=0>
+<TR align=center bgcolor=#291C5E>
+<TD><A HREF="../../../index.html"><FONT color=white><B>Home</B></FONT></A></TD>
+<TD><A HREF="../../../courses.html"><FONT color=white><B>Courses</B></FONT></A></TD>
+<TD><A HREF="../../../math.html"><FONT color=white><B>Math Links</B></FONT></A></TD>
+<TD><A HREF="../../../resources.html"><FONT color=white><B>Resources</B></FONT></A></TD>
+<TD><A HREF="../../../applets.html"><FONT color=white><B>Java Applets</B></FONT></A></TD>
+</TR>
+</TABLE>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD colspan=2>
+<!- ------------------------------------------------------------------------ ->
+
+<B><FONT size=+1>Euclidean Geometry</FONT></B>
+ 
+
+<BR>
+<P>
+<CENTER>
+<TABLE border=1>
+<TR><TD>
+<APPLET CODEBASE="class" CODE="http://www.personal.psu.edu/dpl14/java/geometry/euclidean/EuclideanToolbox.class" width=400 height=100>
+<PARAM NAME=mode VALUE="UNLOCKED">
+<PARAM NAME=choice_1 VALUE="Angle Bisector">
+<PARAM NAME=choice_2 VALUE="Centroid">
+<PARAM NAME=choice_3 VALUE="Circle with Fixed Radius">
+<PARAM NAME=choice_4 VALUE="Circumcenter">
+<PARAM NAME=choice_5 VALUE="Circumscribed Circle">
+<PARAM NAME=choice_6 VALUE="Equilateral Triangle">
+<PARAM NAME=choice_7 VALUE="Euler's Line">
+<PARAM NAME=choice_8 VALUE="Incenter">
+<PARAM NAME=choice_9 VALUE="Inscribed Circle">
+<PARAM NAME=choice_10 VALUE="Inversion">
+<PARAM NAME=choice_11 VALUE="Midpoint">
+<PARAM NAME=choice_12 VALUE="Orthocenter">
+<PARAM NAME=choice_13 VALUE="Parallel Line">
+<PARAM NAME=choice_14 VALUE="Perpendicular Bisector">
+<PARAM NAME=choice_15 VALUE="Perpendicular Line">
+<PARAM NAME=choice_16 VALUE="Point on Circle">
+<PARAM NAME=choice_17 VALUE="Point on Line">
+<PARAM NAME=choice_18 VALUE="Projection">
+<PARAM NAME=choice_19 VALUE="Reflection">
+<PARAM NAME=choice_20 VALUE="Square">
+<PARAM NAME=choice_21 VALUE="Delete">
+<PARAM NAME=splash_1 VALUE="POINT(200,50,blue)">
+<PARAM NAME=splash_2 VALUE="POINT(200,50,red)">
+<PARAM NAME=splash_3 VALUE="POINT(200,50,green)">
+<PARAM NAME=splash_4 VALUE="POINT(200,50,yellow)">
+<PARAM NAME=splash_5 VALUE="POINT(200,50,clear)">
+<PARAM NAME=splash_6 VALUE="LINE_SEGMENT(1,2,gray)">
+<PARAM NAME=splash_7 VALUE="LINE_SEGMENT(2,3,gray)">
+<PARAM NAME=splash_8 VALUE="LINE_SEGMENT(3,1,gray)">
+<PARAM NAME=splash_9 VALUE="CIRCLE(4,5,gray)">
+<PARAM NAME=splash_10 VALUE="LINE_CIRCLE_INTERSECTION(6,9,1,black)">
+<PARAM NAME=splash_11 VALUE="LINE_CIRCLE_INTERSECTION(6,9,-1,black)">
+<PARAM NAME=splash_12 VALUE="LINE_CIRCLE_INTERSECTION(7,9,1,black)">
+<PARAM NAME=splash_13 VALUE="LINE_CIRCLE_INTERSECTION(7,9,-1,black)">
+<PARAM NAME=splash_14 VALUE="LINE_CIRCLE_INTERSECTION(8,9,1,black)">
+<PARAM NAME=splash_15 VALUE="LINE_CIRCLE_INTERSECTION(8,9,-1,black)">
+</APPLET>
+</TD></TR>
+</TABLE>
+</CENTER>
+<HR>
+<A HREF="euclidean.zip">Download</A> this applet for off-line viewing.
+<HR>
+
+<P>
+<B>None</B><BR>
+Drag any movable point (represented by a dot) to a different position or click on any point (dot or cross), line and/or circle to change it's color.
+
+<P>
+<B>Point</B><BR>
+Click anywhere on the applet to create a new movable point.  You may also drag any pre-existing movable point to a new position.  If the mouse is over a point, the point will be highlighted.
+
+<P>
+<B>Line</B><BR>
+Click on any two distinct points, A and B.  Draws the line through A and B.  If you click on the screen, a new point will be created at that point, if none already exists there.
+
+<P>
+<B>Line Segment</B><BR>
+Click on any two distinct points, A and B.  Draws the line segment with endpoints A and B.  For the purposes of the following descriptions, a line segment is considered to be a line while a line is not a line segment.
+
+<P>
+<B>Circle</B><BR>
+Click on any two distinct points, A and B.  Draws the circle centered at A that goes through B.  If you click on the screen, a new point will be created at that point, if none already exists there.
+
+
+<P>
+<B>Intersection</B><BR>
+Click on any two lines and/or circles.  If the two objects you selected intersect, the points of intersection will be drawn.  In the case of the intersection of a line and a circle or the intersection of two circles, this may result in two points of intersection.
+
+<P>
+<B>Angle Bisector</B><BR>
+Click on any three distinct points, A, B and C.  Draws the line which bisects the angle ABC.  See <A HREF="anglebisection.html">Bisecting An Angle</A>.
+
+<P>
+<B>Centroid</B><BR>
+Click on any three distinct points, A, B and C.  Draws the centroid of the triangle with vertices A, B and C.  See <A HREF="centroid.html">Centroid</A>.
+
+<P>
+<B>Circumcenter</B><BR>
+Click on any three distinct points, A, B and C.  Draws the circumcenter of the triangle with vertices A, B and C.  See <A HREF="circumcenter.html">Circumcenter</A>.
+
+<P>
+<B>Circumscribed Circle</B><BR>
+Click on any three distinct points, A, B and C.  Draws the circle through through A, B and C.  
+
+<P>
+<B>Equilateral Triangle</B><BR>
+Click on any two distinct points, A and B.  Draws an equilateral triangle with side AB.  The triangle is drawn so that vertex A immediately precedes B when reading the vertices in counterclockwise order. See <A HREF="equilateraltriangle.html">Constructing An Equilateral Triangle</A>.
+
+
+<P>
+<B>Euler's Line</B><BR>
+Click on any three distinct points, A, B and C.  Draws Euler's line of the triangle with vertices A, B and C.  See <A HREF="eulerline.html">Euler's Line</A>.
+
+
+<P>
+<B>Incenter</B><BR>
+Click on any three distinct points, A, B and C.  Draws the incenter of the triangle with vertices A, B and C.  See <A HREF="incenter.html">Incenter</A>.
+
+
+<P>
+<B>Inscribed Circle</B><BR>
+Click on any three distinct points, A, B and C.  Draws the circle of maximum area that fits inside the triangle with vertices A, B and C.  
+
+
+<P>
+<B>Inversion</B><BR>
+Click on a point A and a circle C.  Draws the inversion of point A across circle C.  In other words, it draws the unique point B such that |OA||OB| = R<SUP>2</SUP> where O is the center of the circle and R is the radius of the circle. See <A HREF="inversion.html">Inversion of a point across a circle</A>.
+
+
+<P>
+<B>Midpoint</B><BR>
+Click on any two distinct points, A and B.  Draws the midpoint of A and B. See <A HREF="midpoint.html">Constructing The Midpoint</A>.
+
+
+<P>
+<B>Orthocenter</B><BR>
+Click on any three distinct points, A, B and C.  Draws the orthocenter of the triangle with vertices A, B and C.  See <A HREF="orthocenter.html">Orthocenter</A>.
+
+
+<P>
+<B>Parallel Line</B><BR>
+Click on a point A and a line L.  Draws the line through A and parallel to L.  See <A HREF="parallelline.html">Constructing A Parallel Line</A>.
+
+
+<P>
+<B>Perpendicular Bisector</B><BR>
+Click on a line segment L, with endpoints A and B.  Draws the line through the midpoint of A and B perpendicular to L.  See <A HREF="perpendicularbisector.html">Constructing The Perpendicular Bisector</A>.
+
+
+<P>
+<B>Perpendicular Line</B><BR>
+Click on a point A and a line L.  Draws the line through A and perpendicular to L.  See <A HREF="perpendicularline.html">Constructing A Perpendicular Line</A>.
+
+
+<P>
+<B>Point on Line</B><BR>
+Click on a line L.  Draws a movable point on L.
+
+
+<P>
+<B>Point on Circle</B><BR>
+Click on a circle C.  Draws a movable point on C.
+
+
+<P>
+<B>Projection</B><BR>
+Click on a point A and a line L.  Draws the point on L that is closest to A.  In other words, it draws the intersection of L and the line through A perpendicular to L.  See <A HREF="projection.html">Projecting A Point Onto a Line</A>.
+
+
+<P>
+<B>Reflection</B><BR>
+Click on a point A and a line L.  Draws the reflection of point A across line L.  In other words, it draws the point that is the mirror image of A on the opposite side of L.  See <A HREF="reflection.html">Reflection of a point across a line</A>.
+
+
+<P>
+<B>Square</B><BR>
+Click on any two distinct points, A and B.  Draws a square with side AB.  The square is drawn so that vertex A immediately precedes B when reading the vertices in counterclockwise order.
+
+
+
+<HR>
+</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

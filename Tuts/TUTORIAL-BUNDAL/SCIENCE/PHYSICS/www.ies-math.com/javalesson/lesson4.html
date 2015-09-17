@@ -1,0 +1,146 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<title>Lesson 4</title>
+</head><body>
+<div align="right">
+<a href="http://www.ies-math.com/math/javalesson/menu.html"><img src="lesson4_files/menu.gif" border="0" height="41" width="144"></a>
+<a href="http://www.ies-math.com/math/javalesson/index.html"><img src="lesson4_files/top.gif" border="0" height="41" width="144"></a>
+</div>
+<hr>
+
+<h1>Lesson 4 Calculating Sequences</h1>
+<h3>Points and Activities</h3>
+<ol>
+<li>Buttons TextFields Labels
+</li><li>Events 
+</li><li>Transforming integer&#129;|string
+</li><li>Transforming double&#129;|string
+</li></ol>
+
+<hr>
+<h3>Example 4 1+2+3+4+....+n</h3>
+<a href="http://www.ies-math.com/math/javalesson/Exm4/Exm4.html">Screen of Applet</a>
+<br><br>
+
+<b>Exm4.java</b>
+<br>
+<table border="2" width="500">
+<tbody><tr bgcolor="#ffffff"><td bgcolor="#ccffff">
+<pre>import java.awt.*;
+import java.applet.*;
+import java.awt.event.*;
+
+public class Exm4 extends Applet implements ActionListener
+{   
+	TextField textField1 = new TextField(); //input textField
+	TextField textField2 = new TextField(); //output textField
+	Label label1 = new Label();
+	Label label2 = new Label();
+	Button button1 = new Button();
+	
+	public void init()
+	{
+		
+		setLayout(null);  //free layout
+		setSize(300,300); //size of this applet
+		
+		add(textField1);  
+		textField1.setFont(new Font("Dialog", Font.PLAIN, 20));
+		textField1.setBounds(100,50,150,40);
+	    
+		add(textField2);
+		textField2.setFont(new Font("Dialog", Font.PLAIN, 20));
+		textField2.setBounds(100,120,150,40);
+		
+		add(label1);
+		label1.setText("n = ");
+		label1.setFont(new Font("Dialog", Font.PLAIN, 20));
+		label1.setBounds(20,50,60,40);
+		
+		add(label2);
+		label2.setText("sum = ");
+		label2.setFont(new Font("Dialog", Font.PLAIN, 20));
+		label2.setBounds(20,120,60,40);
+		
+		add(button1);
+		button1.setLabel("calculate");
+		button1.setBackground(java.awt.Color.lightGray);
+		button1.setFont(new Font("Dialog", Font.PLAIN, 20));
+		button1.setBounds(80,200,120,40);
+	    	button1.addActionListener(this);
+	
+	}
+	
+
+	public void actionPerformed(ActionEvent event)
+	{
+		Object object = event.getSource();
+		String str;
+		int n,sum;
+		if (object == button1){
+			 // get text from textfield 
+		    	str=textField1.getText();
+			// convert string to integer
+			n=Integer.parseInt(str);  
+			sum=calculate(n);
+			// convert integer to string	
+	        		str=Integer.toString(sum);	
+			//set text to textfield
+			textField2.setText(str);  
+	    	}
+	}
+	
+	public int calculate(int n){
+	    	int i;  // index 
+	    	int a;  // i-th term
+	    	int s=0;  // sum of the sequence
+	    	for(i=1;i&lt;=n;i++){
+	        		a=i;    //a(i)=i
+	        		s=s+a;  // S(i+1)=S(i)+a(i)
+	    	}
+	    	return s;
+	}	
+}
+
+
+</pre>
+</td></tr>
+</tbody></table>
+<p>
+
+<b>Exm4.html</b>
+<br>
+<table border="2" width="500">
+<tbody><tr bgcolor="#ffffff"><td bgcolor="#ffffaa">
+<pre>&amp;ltHTML&gt;
+&amp;ltHEAD&gt;
+&amp;ltTITLE&amp;gtExm4&lt;/TITLE&gt;
+&lt;/HEAD&gt;
+&amp;ltBODY&gt;
+&amp;ltAPPLET CODE="Exm4.class" WIDTH=300 HEIGHT=300&gt;&lt;/APPLET&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;
+<pre></pre></pre></td></tr>
+</tbody></table>
+</p><p>
+</p><hr>
+<b>Excercise 4a</b>
+Make an applet to calculate 1+1/2+1/3+1/4+......+1/n  for given n.
+<br>
+
+
+<p>
+
+<b>Excercise 4b</b>  Sequence {a<sub>n</sub>} is defined by a<sub>n+1</sub>&#129;&#129;1/2(a<sub>n</sub>+5/a<sub>n</sub>&#129;jand 
+a<sub>1</sub><br>
+Make an applet to calculate a<sub>n</sub> by given a<sub>1</sub>
+and n.
+
+<br>
+</p><hr>
+<div align="right">
+<a href="http://www.ies-math.com/math/javalesson/menu.html"><img src="lesson4_files/menu.gif" border="0" height="41" width="144"></a>
+<a href="http://www.ies-math.com/math/javalesson/index.html"><img src="lesson4_files/top.gif" border="0" height="41" width="144"></a>
+</div>
+</body></html>

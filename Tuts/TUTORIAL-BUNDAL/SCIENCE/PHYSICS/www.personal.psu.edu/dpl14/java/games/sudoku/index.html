@@ -1,0 +1,83 @@
+<HTML>
+<HEAD>
+<LINK REL="STYLESHEET"  HREF="../../../style.css" TYPE="text/css">
+<LINK REL="SHORTCUT ICON" HREF="../../../images/favicon.ico">
+<TITLE>Sudoku</TITLE>
+</HEAD>
+
+<BODY bgcolor=white vlink="blue">
+
+<!- ---------------------------- PAGE HEADER ------------------------------- ->
+<TABLE cellpadding=0 cellspacing=0 border=0 width=700>
+<TR>
+<TD colspan=2>
+<FONT size=+2><B>David Little</B></FONT>
+</TD>
+</TR>
+<TR><TD valign=top>
+<A HREF="http://www.math.psu.edu">Mathematics Department</A><BR>
+<A HREF="http://www.psu.edu">Penn State University</A><BR>
+Eberly College of Science<BR>
+University Park, PA  16802<BR>
+</TD>
+<TD align=right valign=top>
+Office: <A HREF="http://www.our.psu.edu/soc_maps/mcalstr.html">403 McAllister</A><BR>
+Phone: (814) 865-3329<BR>
+Fax: (814) 865-3735<BR>
+e-mail:<A HREF="mailto:dlittle@psu.edu">dlittle@psu.edu</A><BR>
+</TD>
+</TR>
+<!- ------------------------------------------------------------------------ ->
+<TR>
+<TD valign=top align=left colspan=2>
+<BR>
+<TABLE width=100% border=0 cellspacing=0 cellpadding=0>
+<TR align=center bgcolor=#291C5E>
+<TD><A HREF="../../../index.html"><FONT color=white><B>Home</B></FONT></A></TD>
+<TD><A HREF="../../../courses.html"><FONT color=white><B>Courses</B></FONT></A></TD>
+<TD><A HREF="../../../math.html"><FONT color=white><B>Math Links</B></FONT></A></TD>
+<TD><A HREF="../../../resources.html"><FONT color=white><B>Resources</B></FONT></A></TD>
+<TD><A HREF="../../../applets.html"><FONT color=white><B>Java Applets</B></FONT></A></TD>
+</TR>
+</TABLE>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD colspan=2>
+<!- ------------------------------------------------------------------------ ->
+
+<B><FONT size=+1>Sudoku</FONT></B>
+
+<P>
+The following applet can be used to create and/or solve any sudoku puzzle.  To play a random game of sudoku, simply click on the "Random Puzzle" button.  The applet will automatically clear the board and display a random puzzle with 30 given values. The difficulty of the puzzle will depend on the distribution and positions of these values.  
+Each random puzzle is guaranteed to have at least one solution.</P>
+
+<P>
+To solve the puzzle, simply click on any one of the possible values displayed in the remaining cells.  The user can choose to have forced values highlighted in red to aid with finding a solution.  Once a value has been selected, the applet will automatically eliminate this value from the remaining cells in the same row, column, and 3-by-3 block in the puzzle.  If the value of the cell was forced by the value of other cells in the same row, column or 3-by-3 block, then the value will be displayed in red.  The applet can also be set up to automatically select forced values after each selection made by the user.</P>
+
+<P>
+If at any time there is a violation (i.e., no possible values for a given cell, no possible position for a specific number in a row, column or 3-by-3 block, etc.), the applet will automatically highlight the cells that are causing the violation.  The user must then click on the "Undo Last Choice" button.  Doing so will reset all of the cells up to and including the most recent cell where the user had a choice of the value.  The value selected that led to the violation is highlighted in green so that the user will not select this value again.</P>
+
+<P>
+Use the "Clear Board" button to erase the existing puzzle from the board.  The user can then start creating his/her own puzzle or manually enter another puzzle from a different source and use the applet to solve the puzzle as described above.</P>
+
+
+<BR>
+<CENTER>
+<TABLE border=1>
+<TR><TD>
+<APPLET CODEBASE="class" CODE="http://www.personal.psu.edu/dpl14/java/games/sudoku/SudokuApplet.class" width=400 height=100>
+</APPLET>
+</TD></TR>
+</TABLE>
+</CENTER>
+
+<HR>
+&copy; 2009 David P. Little<BR>
+<HR>
+</TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>

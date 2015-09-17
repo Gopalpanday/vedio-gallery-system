@@ -1,0 +1,18 @@
+body {font-family: Verdana, Arial, Helvetica, sans-serif; color:#291C5E; background-color:#FFFFFF}
+td {font-family: Verdana, Arial, Helvetica, sans-serif; color: #291C5E; }
+
+a {font-family: Verdana, Arial, Helvetica, sans-serif; color: #6E1427; text-decoration:none}
+a:link {font-family: Verdana, Arial, Helvetica, sans-serif; color: #6E1427; text-decoration:none}
+a:hover {font-family: Verdana, Arial, Helvetica, sans-serif; color: #6E1427; text-decoration:underline}
+a:visited:hover {font-family: Verdana, Arial, Helvetica, sans-serif; color: #6E1427; text-decoration:underline}
+a:active {font-family: Verdana, Arial, Helvetica, sans-serif; color: #6E1427; text-decoration:none}
+a:visited {font-family: Verdana, Arial, Helvetica, sans-serif; color: #6E1427; text-decoration:none}
+
+h1 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #291C5E}
+h2 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #291C5E}
+h3 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #291C5E}
+i {font-family: Verdana, Arial, Helvetica, sans-serif; color: #291C5E}
+p {font-family: Verdana, Arial, Helvetica, sans-serif; color: #291C5E; text-align: justify}
+.xl999 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #291C5E; white-space:nowrap}
+
+ 

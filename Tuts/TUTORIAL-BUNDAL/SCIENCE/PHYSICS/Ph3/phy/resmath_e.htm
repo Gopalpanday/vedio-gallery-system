@@ -1,0 +1,160 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/RBC-html40/loose.dtd">
+
+<html>
+
+<head>
+<title>Forced Oscillations, Mathematical Appendix</title>
+<link rel="stylesheet" type="text/css" href="../ph14/applets2.css">
+<meta http-equiv=content-type content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+
+<h1>Forced Oscillations<br>Mathematical Appendix</h1>
+
+<p>The spring pendulum is characterized by the spring constant D, the mass m and the constant of attenuation &#915;. (&#915; is a measure of the friction force assumed as proportional to the velocity.)<br>
+The top of the spring pendulum is moved to and fro according to the formula
+<span class="nobr">y<sub>E</sub> &nbsp; = &nbsp; A<sub>E</sub> cos (&#969;t).</span><br>
+y<sub>E</sub> means the exciter's elongation compared with the mid-position; A<sub>E</sub> is the amplitude of the exciter's oscillation, &#969; means the corresponding angular frequency and t the time.</p>
+
+<p>It is a question of finding the size of the resonator's elongation y (compared with its mid-position) at the time t. Using
+<span class="nobr">&#969;<sub>0</sub> &nbsp; = &nbsp; (D/m)<sup>1/2</sup></span>
+this problem is described by the following differential equation:</p>
+
+<table class="Formel" align="center"><tr><td class="Formel">
+y''(t) &nbsp; = &nbsp; &#969;<sub>0</sub><sup>2</sup>
+(A<sub>E</sub> cos (&#969;t) &#8722; y(t)) &nbsp;
+&#8722; &nbsp; &#915; y'(t)<br>
+Initial conditions: &nbsp; &nbsp; y(0) = 0; &nbsp; y'(0) = 0
+</td></tr></table>
+
+<p>If you want to solve this differential equation, you have to distinguish between several cases:</p>
+
+<table bgcolor="#ff80ff"><tr><td>
+<b>Case 1: &#915; &lt; 2 &#969;<sub>0</sub></b>
+</td></tr></table>
+
+<div class="Abstand">&nbsp;</div>
+
+<table bgcolor="#00ff00"><tr><td>
+<b>Case 1.1:
+&#915; &lt; 2 &#969;<sub>0</sub>;
+&#915; &#8800; 0 or &#969; &#8800; &#969;<sub>0</sub></b>
+</td></tr></table>
+
+<p>y(t) &nbsp; = &nbsp; A<sub>abs</sub> sin (&#969;t)
++ A<sub>el</sub> cos (&#969;t)
+&nbsp; + &nbsp; e<sup>&#8722;&#915;t/2</sup>
+[A<sub>1</sub> sin (&#969;<sub>1</sub>t)
++ B<sub>1</sub> cos (&#969;<sub>1</sub>t)]<br>
+
+&#969;<sub>1</sub> &nbsp; = &nbsp;
+(&#969;<sub>0</sub><sup>2</sup>
+&#8722; &#915;<sup>2</sup>/4)<sup>1/2</sup><br>
+
+A<sub>abs</sub> &nbsp; = &nbsp; A<sub>E</sub>
+&#969;<sub>0</sub><sup>2</sup>
+&#915; &#969;
+/ [(&#969;<sub>0</sub><sup>2</sup>
+&#8722; &#969;<sup>2</sup>)<sup>2</sup>
++ &#915;<sup>2</sup> &#969;<sup>2</sup>]<br>
+
+A<sub>el</sub> &nbsp; = &nbsp; A<sub>E</sub>
+&#969;<sub>0</sub><sup>2</sup>
+(&#969;<sub>0</sub><sup>2</sup>
+&#8722; &#969;<sup>2</sup>)
+/ [(&#969;<sub>0</sub><sup>2</sup>
+&#8722; &#969;<sup>2</sup>)<sup>2</sup>
++ &#915;<sup>2</sup> &#969;<sup>2</sup>]<br>
+
+A<sub>1</sub> &nbsp; = &nbsp; &#8722; (A<sub>abs</sub> &#969;
++ (&#915;/2) A<sub>el</sub>)
+/ &#969;<sub>1</sub><br>
+
+B<sub>1</sub> &nbsp; = &nbsp; &#8722; A<sub>el</sub>
+</p>
+
+<table bgcolor="#00ff00"><tr><td>
+<b>Case 1.2:
+&#915; &lt; 2 &#969;<sub>0</sub>;
+&#915; = 0 and
+&#969; = &#969;<sub>0</sub></b>
+</td></tr></table>
+
+<p>y(t) &nbsp; = &nbsp; (A<sub>E</sub> &#969; t / 2) sin (&#969;t)</p>
+
+<table bgcolor="#ff80ff"><tr><td>
+<b>Case 2: &#915; =
+2 &#969;<sub>0</sub></b>
+</td></tr></table>
+
+<p>y(t) &nbsp; = &nbsp; A<sub>abs</sub> sin (&#969;t)
++ A<sub>el</sub> cos (&#969;t)
+&nbsp; + &nbsp; e<sup>&#8722;&#915;t/2</sup>
+(A<sub>1</sub> t + B<sub>1</sub>)<br>
+
+A<sub>abs</sub> &nbsp; = &nbsp; A<sub>E</sub>
+&#969;<sub>0</sub><sup>2</sup>
+&#915; &#969;
+/ (&#969;<sub>0</sub><sup>2</sup>
++ &#969;<sup>2</sup>)<sup>2</sup><br>
+
+A<sub>el</sub> &nbsp; = &nbsp; A<sub>E</sub>
+&#969;<sub>0</sub><sup>2</sup>
+(&#969;<sub>0</sub><sup>2</sup>
+&#8722; &#969;<sup>2</sup>)
+/ (&#969;<sub>0</sub><sup>2</sup>
++ &#969;<sup>2</sup>)<sup>2</sup><br>
+
+A<sub>1</sub> &nbsp; = &nbsp; &#8722; (A<sub>abs</sub> &#969;
++ (&#915;/2) A<sub>el</sub>)<br>
+
+B<sub>1</sub> &nbsp; = &nbsp; &#8722; A<sub>el</sub>
+</p>
+
+<table bgcolor="#ff80ff"><tr><td>
+<b>Case 3: &#915; &gt; 2 &#969;<sub>0</sub></b>
+</td></tr></table>
+
+<p>
+y(t) &nbsp; = &nbsp; A<sub>abs</sub> sin (&#969;t)
++ A<sub>el</sub> cos (&#969;t)
+&nbsp; + &nbsp; e<sup>&#8722;&#915;t/2</sup>
+[A<sub>1</sub> sinh (&#969;<sub>1</sub>t)
++ B<sub>1</sub> cosh (&#969;<sub>1</sub>t)]<br>
+
+&#969;<sub>1</sub> &nbsp; = &nbsp;
+(&#915;<sup>2</sup>/4
+&#8722; &#969;<sub>0</sub><sup>2</sup>)<sup>1/2</sup><br>
+
+A<sub>abs</sub> &nbsp; = &nbsp; A<sub>E</sub>
+&#969;<sub>0</sub><sup>2</sup>
+&#915; &#969;
+/ [(&#969;<sub>0</sub><sup>2</sup>
+&#8722; &#969;<sup>2</sup>)<sup>2</sup>
++ &#915;<sup>2</sup> &#969;<sup>2</sup>]<br>
+
+A<sub>el</sub> &nbsp; = &nbsp; A<sub>E</sub>
+&#969;<sub>0</sub><sup>2</sup>
+(&#969;<sub>0</sub><sup>2</sup>
+&#8722; &#969;<sup>2</sup>)
+/ [(&#969;<sub>0</sub><sup>2</sup>
+&#8722; &#969;<sup>2</sup>)<sup>2</sup>
++ &#915;<sup>2</sup> &#969;<sup>2</sup>]<br>
+
+A<sub>1</sub> &nbsp; = &nbsp; &#8722; (A<sub>abs</sub> &#969;
++ (&#915;/2) A<sub>el</sub>)
+/ &#969;<sub>1</sub><br>
+
+B<sub>1</sub> &nbsp; = &nbsp; &#8722; A<sub>el</sub></p>
+
+<div class="Abstand">&nbsp;</div>
+
+<hr class="Trennlinie">
+
+<div class="Abstand">&nbsp;</div>
+
+</body>
+
+</html>

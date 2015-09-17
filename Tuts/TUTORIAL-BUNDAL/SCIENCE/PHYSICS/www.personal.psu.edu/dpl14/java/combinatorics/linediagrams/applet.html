@@ -1,0 +1,188 @@
+<HTML>
+<HEAD>
+<TITLE>Calculus Applets</TITLE>
+<LINK REL="STYLESHEET"  HREF="../../../style.css" TYPE="text/css">
+<LINK REL="SHORTCUT ICON" HREF="../../../images/favicon.ico">
+</HEAD>
+
+<BODY bgcolor=white vlink="blue">
+
+
+<!- ---------------------------- PAGE HEADER ------------------------------- ->
+<TABLE cellpadding=0 cellspacing=0 border=0 width=700>
+<TR>
+<TD colspan=2>
+<FONT size=+2><B>David Little</B></FONT>
+</TD>
+</TR>
+<TR><TD valign=top>
+<A HREF="http://www.math.psu.edu">Mathematics Department</A><BR> 
+<A HREF="http://www.psu.edu">Penn State University</A><BR>
+Eberly College of Science<BR>
+University Park, PA  16802<BR>
+</TD>
+<TD align=right valign=top>
+Office: <A HREF="http://www.our.psu.edu/soc_maps/mcalstr.html">403 McAllister</A><BR>
+Phone: (814) 865-3329<BR>
+Fax: (814) 865-3735<BR>
+e-mail:<A HREF="mailto:dlittle@psu.edu">dlittle@psu.edu</A><BR>
+</TD>
+</TR>
+<!- ------------------------------------------------------------------------ ->
+<TR>
+<TD valign=top align=left colspan=2>
+<BR>
+<TABLE width=100% border=0 cellspacing=0 cellpadding=0>
+<TR align=center bgcolor=#291C5E>
+<TD><A HREF="../../../index.html"><FONT color=white><B>Home</B></FONT></A></TD>
+<TD><A HREF="../../../courses.html"><FONT color=white><B>Courses</B></FONT></A></TD>
+<TD><A HREF="../../../math.html"><FONT color=white><B>Math Links</B></FONT></A></TD>
+<TD><A HREF="../../../resources.html"><FONT color=white><B>Resources</B></FONT></A></TD>
+<TD><A HREF="../../../applets.html"><FONT color=white><B>Java Applets</B></FONT></A></TD>
+</TR>
+</TABLE>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD colspan=2>
+<!- ------------------------------------------------------------------------ ->
+
+
+<B><FONT SIZE=+1>Combinatorial Aspects of the Lascoux-Sch&uuml;tzenberger Tree</FONT></B>
+<P>
+
+
+<B>The Applet</B>
+<P>
+Click on the buttons immediately below to launch the Line Diagram Applet and/or Circle Diagram.  If the buttons
+did not appear, then make sure your web browser is Java 1.1 compatible.
+<CENTER>
+<TABLE border=1>
+<TR>
+<TD>
+<APPLET ARCHIVE="LDApplet.jar" code="http://www.personal.psu.edu/dpl14/java/combinatorics/linediagrams/LineDiagramApplet.class" width=400 height=30>
+</APPLET>
+</TD>
+</TR> 
+</TABLE>
+</CENTER>
+
+
+
+<P>
+The below picture gives a view of what is displayed by the
+Applet. We notice there the ``<EM>line diagram</EM>'' which corresponds to a reduced word. This
+diagram gives the trajectories of the letters
+<IMG WIDTH=67 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline344" SRC="images/img48.gif">
+as they are rearranged by the successive simple transpositions, starting from the identity and ending
+with the target permutation.<CENTER>
+
+
+<IMG SRC="images/linediagram.gif">
+
+<TABLE>
+<TR><TD VALIGN=top>
+
+<TABLE WIDTH=285>
+<CAPTION><B>Regional Descriptions</B></CAPTION>
+<TR valign=top><TD><B>A:</B></TD>
+<TD>This region displays the Line Diagram corresponding to the current reduced word
+shown in <B>E</B>.  Double click on a red cross to bump it up or back down.</TD></TR>
+
+<TR valign=top><TD><B>B:</B></TD>
+<TD>Select a value of <I>n</I>.  When value of <I>n</I> is changed, the Applet will 
+automatically select a new permutation and reduced word.</TD></TR>
+
+<TR valign=top><TD><B>C:</B></TD>
+<TD>Select a particular type of permutation: Any (except identity), 321-avoiding,
+Alternating, Dominant, Grassmanian, Reverse, or Vexillary.</TD></TR>
+
+<TR valign=top><TD><B>D:</B></TD>
+<TD>This region displays the current permutation.  You may type in your own
+permutation of any size in this region.</TD></TR>
+
+<TR valign=top><TD><B>E:</B></TD>
+<TD>This region displays the current reduced word.  You may type in your own reduced
+word in this region.</TD></TR>
+
+<TR valign=top><TD><B>F:</B></TD>
+<TD>This region lists the permutations in the L-S Tree</TD></TR>
+
+<TR valign=top><TD><B>G:</B></TD>
+<TD>This region lists the corresponding reduced words in the L-S Tree</TD></TR>
+</TABLE>
+</TD>
+
+<TD VALIGN=top>
+<TABLE WIDTH=350>
+<CAPTION><B>Button Descriptions</B></CAPTION>
+<TR valign=top><TD align=right><B>Random<BR> Permutation:</B></TD>
+<TD>Click this button to select a random permutation of the given type and a word
+corresponding to this permutation.<BR></TD></TR>
+
+<TR valign=top><TD align=right><B>Random<BR> Reduced Word:</B></TD> 
+<TD>Click this button to select a random reduced word corresponding to the current
+permutation.<BR></TD></TR>
+
+<TR valign=top><TD align=right><B>Update:</B></TD>
+<TD>This button updates the permutation and reduced word so that they agree with the
+current line diagram.  Also adds them to the appropriate lists in regions <B>F</B> and
+<B>G</B>.<BR></TD></TR>
+
+<TR valign=top><TD align=right><B>Reset:</B></TD>
+<TD>This button resets the Line Diagram to correspond to the current reduced word and 
+ensures that the current permutation also corresponds to the current word.<BR></TD></TR>
+
+<TR valign=top><TD align=right><B>Clear:</B></TD>
+<TD>This button clears regions <B>F</B> and <B>G</B> and initializes them to be
+the current permutation and reduced word, respectively.<BR></TD></TR>
+
+<TR valign=top><TD align=right><B>-&gt;<BR> (resp. &lt;-):</B></TD>
+<TD>This button applies the bijection in the forward (resp. reverse) direction.<BR></TD></TR>
+</TABLE>
+
+</TD></TR>
+</TABLE>
+
+</CENTER>
+
+<P>
+Below, we see there the corresponding ``<EM>circle diagram</EM>''. The
+rows of this diagram are labelled
+<IMG WIDTH=67 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline344" SRC="images/img48.gif">. 
+If the target permutation is
+<IMG WIDTH=131 HEIGHT=46 ALIGN=MIDDLE ALT="tex2html_wrap_inline202" SRC="images/img49.gif"> 
+the columns  are labelled
+<IMG WIDTH=90 HEIGHT=14 ALIGN=MIDDLE ALT="tex2html_wrap_inline204" SRC="images/img50.gif">.
+We place a ``
+<IMG WIDTH=8 HEIGHT=14 ALIGN=MIDDLE ALT="tex2html_wrap_inline352" SRC="images/img51.gif">
+'' in column 
+<IMG WIDTH=11 HEIGHT=14 ALIGN=MIDDLE ALT="tex2html_wrap_inline208" SRC="images/img52.gif">
+and row  
+<IMG WIDTH=11 HEIGHT=14 ALIGN=MIDDLE ALT="tex2html_wrap_inline208" SRC="images/img52.gif">
+for each
+<IMG WIDTH=93 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline358" SRC="images/img53.gif">.
+We place dots south and east of every ``
+<IMG WIDTH=8 HEIGHT=14 ALIGN=MIDDLE ALT="tex2html_wrap_inline352" SRC="images/img51.gif">
+'', and circles in the remaining locations. If at time <I>k</I> the line diagram interchanges
+<I>r</I> and <I>s</I> with <I>r</I>&lt;<I>s</I> then <I>k</I> is placed in the circle at the intersection of the row labelled <I>r</I> with the column labelled <I>s</I>. The user will note that for any 321-avoiding permutation the labels of the circles constitute a standard tableau of french skew shape.
+
+<P>
+<CENTER>
+<IMG SRC="images/circlediagram.gif">
+</CENTER>
+
+Double clicking on a "red" circle has the same effect as double clicking on the corresponding cross
+in the line diagram. 
+
+<P>
+For a demonstration of the bijection, click <A HREF="bijection.html">here</A>.
+
+
+</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

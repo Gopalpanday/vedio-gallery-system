@@ -1,0 +1,42 @@
+<html>
+
+<head>
+<title>Coupled pendula</title>
+<meta name="description" content="Java applet: Coupled pendula">
+<meta name="author" content="Walter Fendt">
+<meta name="keywords" content="physics, mechanics, pendulum, coupled pendula, oscillation">
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table width="100%" bgcolor="#0000FF" cellpadding="10"><tr><td>
+<table width="100%" bgcolor="#FFFF00" cellpadding="5"><tr><td align="center">
+<font size="+2"><b>Coupled Pendula</b></font>
+</td></tr></table>
+</td></tr></table>
+
+<p><b>This simulation shows two pendula coupled by a spring which has a small spring constant (weak coupling). For such systems it is characteristic that the oscillation's energy permanently moves from one partial system to the other.</b></p>
+
+<p><b>The &quot;Reset&quot; button brings the system to its initial position. You can start or stop and continue the simulation with the other two buttons. If you choose the option &quot;Slow motion&quot;, the movement will be five times slower. It is possible to change the initial positions of the two pendula by using the corresponding textfields. A positive (negative) angle means an elongation to the right (left) side.</b></p>
+
+<p align="center">
+<applet code="GekoPendel.class" codebase="../phcl" width="680" height="380">
+<param name="language" value="English">
+</applet></p>
+
+<p><b>You can get the harmonics of the system as follows:
+<ul>
+<li>If you write two equal numbers into the textfields (e.g. twice <nobr>10&deg;),</nobr>
+the two pendula will always have same phases.
+<li>By choosing two opposite numbers (e.g. <nobr>8&deg;</nobr> and
+<nobr>-8&deg;),</nobr> you can get an oscillation with opposite phases.
+</ul></b></p>
+
+<p><b>If you write <nobr>0&deg;</nobr> into one of the textfields for the initial positions, the entire energy of the oscillation will alternately be transferred to one of the pendula: That pendulum which first was in the mid-position oscillates with an ever-increasing amplitude, whereas the amplitude of the other pendulum decreases. After some time there is a moment in which only the first-mentioned pendulum oscillates; the other one stops in the mid-position at that time. Afterwards this process happens again with reversed roles and so on.</b></p>
+
+<hr>
+
+
+</body>
+
+</html>

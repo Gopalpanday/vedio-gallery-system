@@ -1,0 +1,107 @@
+<HTML>
+<HEAD>
+<LINK REL="STYLESHEET"  HREF="../../../style.css" TYPE="text/css">
+<LINK REL="SHORTCUT ICON" HREF="../../../images/favicon.ico">
+<TITLE>Vigenere</TITLE>
+</HEAD>
+
+<BODY bgcolor=white vlink="blue">
+
+
+<!- ---------------------------- PAGE HEADER ------------------------------- ->
+<TABLE cellpadding=0 cellspacing=0 border=0 width=700>
+<TR>
+<TD colspan=2>
+<FONT size=+2><B>David Little</B></FONT>
+</TD>
+</TR>
+<TR><TD valign=top>
+<A HREF="http://www.math.psu.edu">Mathematics Department</A><BR> 
+<A HREF="http://www.psu.edu">Penn State University</A><BR>
+Eberly College of Science<BR>
+University Park, PA  16802<BR>
+</TD>
+<TD align=right valign=top>
+Office: 403 McAllister<BR>
+Phone: (814) 865-3329<BR>
+Fax: (814) 865-3735<BR>
+e-mail:<A HREF="mailto:dlittle@psu.edu">dlittle@psu.edu</A><BR>
+</TD>
+</TR>
+<!- ------------------------------------------------------------------------ ->
+<TR>
+<TD valign=top align=left colspan=2>
+<BR>
+<TABLE width=100% border=0 cellspacing=0 cellpadding=0>
+<TR align=center bgcolor=#291C5E>
+<TD><A HREF="../../../index.html"><FONT color=white><B>Home</B></FONT></A></TD>
+<TD><A HREF="../../../courses.html"><FONT color=white><B>Courses</B></FONT></A></TD>
+<TD><A HREF="../../../math.html"><FONT color=white><B>Math Links</B></FONT></A></TD>
+<TD><A HREF="../../../resources.html"><FONT color=white><B>Resources</B></FONT></A></TD>
+<TD><A HREF="../../../applets.html"><FONT color=white><B>Java Applets</B></FONT></A></TD>
+</TR>
+</TABLE>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD colspan=2>
+<!- ------------------------------------------------------------------------ ->
+
+<B><FONT size=+1>Breaking The Vigenere Encryption System</FONT></B>
+<BR><I> by Adriano M. Garsia</I>
+
+
+<P>
+We recall that a <I>Caesar</I> <TT>k</TT>-shift is the circular permutation which replaces each letter of the alphabet by the letter <TT>k</TT> places later (with wrap around). In <I>Vigenere</I> encryption, the key consists of a <I>period</I> <TT>p</TT> and a sequence <TT>k<SUB>1</SUB>,k<SUB>2</SUB>,</TT>...<TT>,k<SUB>p</SUB></TT> of Caesar shifts. This given, the plaintext
+is broken up into successive strings of <TT>p</TT> letters each and the
+<TT>s</TT><SUP><I>th</I></SUP> letter of each string is replaced by its image under the Caesar <TT>k<SUB>s</SUB></TT>-shift. This encryption system is vulnerable to letter-frequency analysis. The letter frequencies observed in the sequence of <TT>s</TT><SUP><I>th</I></SUP> letters have the same distribution as the plaintext letters only <TT>k<SUB>s</SUB></TT>-shifted.</FONT></P>
+
+<P>To break Vigenere encryption, one guesses a period <TT>p</TT> and then, by comparing the histogram of observed frequencies of <TT>s</TT><SUP><I>th</I></SUP> letters to the histogram of English letter probabilities, one is led to the correct value of <TT>k<SUB>s</SUB></TT>. A wrong guess for the period <TT>p</TT> leads to relatively flat histograms for all or most of the values of <TT>s</TT>. The code breaker in this case repeats the analysis with a new trial period.</FONT></P>
+
+<P>The Applet below is programmed to illustrate this codebreaking process. </FONT></P>
+
+<UL>
+<LI>Upon pressing the <I>Random Cyphertext</I> button the
+Applet will display some text which is Vigenere encrypted by a randomly
+selected key.</LI>
+
+<LI>Press the <I>Break</I> button to start the process. The
+Applet assumes (most often incorrectly) that <TT>p=1</TT>. Thus it proceeds
+as if every letter of plaintext was encrypted by the same Caesar shift.
+It displays (in red) the histogram of observed letter frequencies, alongside
+a (blue) histogram of english letter probabilities.  It also displays the 
+first 25 characters of your text, decoded according to your current keyword.</LI>
+
+<LI>Press the <I>Period +</I> several times (if
+necessary) until the red histogram resembles a shifted version of the blue
+histogram. This given, use the mouse to drag the red histogram to the position
+where it best aproximates the blue histogram. You can also use the keyboard to type the image of "E".  Pressing the SPACE key will shift the histogram by one position. The Applet stores the shift
+corresponding to that position as a tentative value for <TT>k<SUB>1</SUB></TT>.</LI>
+
+<LI>Push the <I>Position Right</I> button and the Applet
+will display, again in red, the histogram giving the observed frequencies
+of the <TT>2<SUP>nd</SUP></TT> letters of the successive strings. Drag the
+red histogram to the best position as before to obtain the tentative of
+<TT>k<SUB>2</SUB></TT>. Repeat this process until you have tentatively determined all the other <TT>k<SUB>s</SUB></TT>.</LI>
+
+<LI>At this point you may press the <I>Decrypt</I> button.
+The Applet will then decrypt the given cyphertext as if it was encrypted
+by means of the values of <TT>k<SUB>1</SUB>,k<SUB>2</SUB>,</TT>...<TT>,k<SUB>p</SUB></TT> you have just determined.
+A look at the resulting text will make it clear if all of your guesses
+were correct or which, if any, need to be changed.</LI>
+</UL>
+
+<CENTER>
+<APPLET CODEBASE="class" CODE="http://www.personal.psu.edu/dpl14/java/cryptography/vigenere/Vigenere.class" WIDTH=600 HEIGHT=400></APPLET>
+</CENTER>
+<HR>
+<A HREF="Vigenere.zip">Download</A> this applet for off-line viewing (includes source code)
+
+<HR>
+</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

@@ -1,0 +1,157 @@
+<HTML>
+<HEAD>
+<LINK REL="STYLESHEET"  HREF="../../../style.css" TYPE="text/css">
+<LINK REL="SHORTCUT ICON" HREF="../../../images/favicon.ico">
+<TITLE>Roulette Wheels and Discrete Random Variables</TITLE>
+</HEAD>
+
+<BODY bgcolor=white vlink="blue">
+
+<!- ---------------------------- PAGE HEADER ------------------------------- ->
+<TABLE cellpadding=0 cellspacing=0 border=0 width=700>
+<TR>
+<TD colspan=2>
+<FONT size=+2><B>David Little</B></FONT>
+</TD>
+</TR>
+<TR><TD valign=top>
+<A HREF="http://www.math.psu.edu">Mathematics Department</A><BR> 
+<A HREF="http://www.psu.edu">Penn State University</A><BR>
+Eberly College of Science<BR>
+University Park, PA  16802<BR>
+</TD>
+<TD align=right valign=top>
+Office: 403 McAllister<BR>
+Phone: (814) 865-3329<BR>
+Fax: (814) 865-3735<BR>
+e-mail:<A HREF="mailto:dlittle@psu.edu">dlittle@psu.edu</A><BR>
+</TD>
+</TR>
+<!- ------------------------------------------------------------------------ ->
+<TR>
+<TD valign=top align=left colspan=2>
+<BR>
+<TABLE width=100% border=0 cellspacing=0 cellpadding=0>
+<TR align=center bgcolor=#291C5E>
+<TD><A HREF="../../../index.html"><FONT color=white><B>Home</B></FONT></A></TD>
+<TD><A HREF="../../../courses.html"><FONT color=white><B>Courses</B></FONT></A></TD>
+<TD><A HREF="../../../math.html"><FONT color=white><B>Math Links</B></FONT></A></TD>
+<TD><A HREF="../../../resources.html"><FONT color=white><B>Resources</B></FONT></A></TD>
+<TD><A HREF="../../../applets.html"><FONT color=white><B>Java Applets</B></FONT></A></TD>
+</TR>
+</TABLE>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD colspan=2>
+<!- ------------------------------------------------------------------------ ->
+
+<B><FONT size=+1>Roulette Wheels and Discrete Random Variables</FONT></B>
+
+
+
+<P>
+<CENTER>
+<TABLE BORDER=1>
+<TR><TD>
+<APPLET CODEBASE="class"  CODE="http://www.personal.psu.edu/dpl14/java/probability/roulettewheel/CentralLimitTheorem.class"  width=401 height=101>
+</APPLET>
+</TD></TR>
+</TABLE>
+</CENTER>
+
+<P>
+<TABLE>
+<TR>
+<TD valign=top><FONT size=+1><B>Controls</B></FONT></TD>
+<TD>
+<UL>
+<LI><U>Sample Size:</U> number of times the Roulette Wheel is spun during a single experiment.
+<LI><U>Number of Trials:</U> number of times the experiment is repeated.
+<LI><U>Collect Data:</U> collects data according to the above parameters.
+<LI><U>Clear Data:</U> removes all data that has been collected.
+</UL>
+</TD>
+</TR>
+
+<TR>
+<TD valign=top><FONT size=+1><B>Roulette Wheel</B></FONT</TD>
+
+
+<TD>
+The Roulette Wheel serves as our representation of a discrete Random Variable and consists of a single wheel or several concentric wheels.  The basic tools used to construct a generic Roulette Wheel are described below.  We begin with some general characteristics of the Roulette Wheel and then give a description of each of the side buttons.
+<P>
+In general, the outermost wheel only is used to determine the value of the Random Variable.  The size of each region and thus the probability associated with any given event can be adjusted by dragging the corresponding circle along the edge of the Roulette Wheel.
+<P>
+Any region of the wheel can be selected by simply clicking on it.  The value of the region and it's probability will be displayed in the "Region Controls" panel (see below).  The arrow keys may also be used to change the currently selected region/wheel.
+<P>
+You may spin the wheel by simply dragging the wheel to the left or right.  As soon as the mouse leaves the Roulette Wheel, the wheel will begin to spin on its own.  The faster you drag the mouse, the faster the wheel will spin.
+<P>
+<B>Wheel Controls</B>
+<UL>
+<LI>	<U>Wheel Select:</U> select from a number of pre-defined Roulette Wheels, including a Coin, a Die, a Pair of Dice, the Sum of Two Dice and two wheels representing the Monty Hall Problem
+<LI>	<U>Insert:</U> insert a new wheel immediately after the currently selected wheel. 
+<LI><U>Remove:</U> remove the currently selected wheel.
+<LI>	<U>Repeat:</U> creates a new outermost wheel, representing an independent trial of the currently selected wheel, that is each region of the original outermost wheel is divided into regions according to the values and probabilities of the current wheel.
+<LI>	<U>Total:</U> creates a new outermost wheel; the value of each region is the sum of the values of the corresponding region of each of the other wheels.
+<LI>	<U>Invert:</U>
+reverses the order of the wheels while preserving the probabilities.
+<LI>	<U>Simplify:</U>
+combines regions of the Roulette Wheel that represent the same event, reading from the inner most wheel to the outermost wheel.
+<LI>	<U>Spin:</U> spin the Roulette Wheel; when the wheel stops spinning, the value of the Random Variable (determined by the value shown on the outermost wheel) and it's corresponding probability is displayed in the "Region Controls" panel (see below).  The value of the Random Variable is also recorded and the current histogram is updated accordingly.
+<LI>	<U>Random:</U> immediately produces a random value from the Roulette Wheel.  This value is recorded and the current histogram is updated accordingly.
+</UL>
+
+<P>
+<B>Region Controls</B>
+<UL>
+<LI>	<U>Insert:</U> insert a new region immediately after (in the counterclockwise direction) the currently selected region.
+<LI>	<U>Remove:</U> remove the currently selected region.
+<LI><U>Value:</U> displays the value of the currently selected region; the value of the currently selected region can be changed by simply editing this field.
+<LI>	<U>Probability Select:</U> displays the Probability/Conditional Probability/Ratio of the currently selected region; "Probability" represents the probability that the wheel will land on that region of the wheel, "Conditional Probability" represents the probability that the wheel will land on the currently selected region of the wheel given that it lands on the corresponding region of the preceding wheel, "Ratio" represents the size of the currently selected region relative to that of the size of other regions of the wheel that correspond to the same region of the preceding wheel.
+<LI><U>Color Select:</U> choose from among several colors for the currently selected region; the color you select is purely for aesthetic reasons, except in the case of the color black;  if the wheel lands on a black region of the outermost wheel, then the wheel will automatically spin again, see for example the "Monty Hall (Doesn't Know)" wheel.
+</UL>
+</TD>
+</TR>
+
+<TR>
+<TD valign=top><FONT size=+1><B>Statistics</B></FONT></TD>
+<TD>
+<UL>
+<LI>	<U>Count:</U> current number of data points.
+<LI><U>Expected Mean:</U> the expected value of a single spin of the Roulette Wheel.
+<LI><U>Expected Variance:</U> the variance of the Roulette Wheel.
+<LI><U>Sample Mean:</U> the sample mean of the data represent in the current histogram (see below).
+<LI>	<U>Sample Variance:</U> the sample variance of the data represented in the current histogram (see below).
+<LI><U>Maximum Value:</U> maximum value of the data represented in the current histogram (see below).
+<LI><U>Minimum Value:</U> minimum value of the data represented in the current histogram (see below).
+
+</UL>
+</TD>
+</TR>
+
+
+<TR>
+<TD valign=top><FONT size=+1><B>Histogram</B></FONT></TD>
+<TD>
+<UL>
+<LI>	<U>Central Limit Theorem:</U> displays a histogram of the average value from each experiment; click on the graph it get a confidence interval centered on the sample mean; use the arrow keys to adjust the interval.
+<LI>	<U>Total Value:</U> displays a histogram of the total value from each experiment; click on the graph it get a confidence interval centered on the sample mean; use the arrow keys to adjust the interval.
+<LI>	<U>Chi Squared Test:</U> displays a histogram of the chi squared statistic from each experiment; click on the graph it get a one-sided confidence interval; use the arrow keys to adjust the interval.
+<LI>	<U>Arc Sine Law:</U> displays a histogram of the percentage of the time the partial sums are positive from each experiment.
+</UL>
+</TD>
+</TR>
+</TABLE>
+
+<HR>
+&copy; 2005 David P. Little<BR>
+<HR>
+</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>
+

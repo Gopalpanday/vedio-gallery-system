@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<LINK REL="STYLESHEET"  HREF="../../style.css" TYPE="text/css">
+<LINK REL="SHORTCUT ICON" HREF="../../images/favicon.ico">
+<TITLE>Parabola</TITLE>
+</HEAD>
+
+<BODY bgcolor=white vlink="blue">
+
+
+<!- ---------------------------- PAGE HEADER ------------------------------- ->
+<TABLE cellpadding=0 cellspacing=0 border=0 width=700>
+<TR>
+<TD colspan=2>
+<FONT size=+2><B>David Little</B></FONT>
+</TD>
+</TR>
+<TR><TD valign=top>
+<A HREF="http://www.math.psu.edu">Mathematics Department</A><BR> 
+<A HREF="http://www.psu.edu">Penn State University</A><BR>
+Eberly College of Science<BR>
+University Park, PA  16802<BR>
+</TD>
+<TD align=right valign=top>
+Office: 403 McAllister<BR>
+Phone: (814) 865-3329<BR>
+Fax: (814) 865-3735<BR>
+e-mail:<A HREF="mailto:dlittle@psu.edu">dlittle@psu.edu</A><BR>
+</TD>
+</TR>
+<!- ------------------------------------------------------------------------ ->
+<TR>
+<TD valign=top align=left colspan=2>
+<BR>
+<TABLE width=100% border=0 cellspacing=0 cellpadding=0>
+<TR align=center bgcolor=#291C5E>
+<TD><A HREF="../../index.html"><FONT color=white><B>Home</B></FONT></A></TD>
+<TD><A HREF="../../courses.html"><FONT color=white><B>Courses</B></FONT></A></TD>
+<TD><A HREF="../../math.html"><FONT color=white><B>Math Links</B></FONT></A></TD>
+<TD><A HREF="../../resources.html"><FONT color=white><B>Resources</B></FONT></A></TD>
+<TD><A HREF="../../applets.html"><FONT color=white><B>Java Applets</B></FONT></A></TD>
+</TR>
+</TABLE>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD colspan=2>
+<!- ------------------------------------------------------------------------ ->
+
+<B><FONT size=+1>Parabola</FONT></B>
+
+<BR>
+A parabola can be constructed using the following paper folding method.  First, draw a straight line on a piece of paper.  Next, draw a point not on the line.  Now,  select any point on the line and fold the paper in half so that the point on the line is directly on top of the point not on the line.  Repeat this over and over again, each time selecting a different point on the line.  The creases in the paper will form a parabola.  
+<P>
+This construction is simulated in the applet below.  The black horizontal line represents the line drawn on the piece of paper.  The black point represents the point not on the line while the red point represents the point on the line.  The gray line represents the fold made in the paper.
+<P>
+We can specify a particular point on the parabola by finding the intersection of the blue line with a line drawn through the red point and perpendicular to the black horizontal line.  Put another way, a parabola consists of the points that are equidistant from a line and a point not on the line.  
+<P>
+As you drag the red point back and forth along the horizontal line, the blue point traces out a parabola.  Can you explain why this point has the property described above?
+<P>
+Double click on any object to see how it's position changes as you move the red point around.  Type "ctrl-c" to clear the screen.  
+<P>
+<CENTER>
+<TABLE border=1>
+<TR><TD>
+<APPLET CODEBASE="../geometry/euclidean/class" CODE="http://www.personal.psu.edu/dpl14/java/parametricequations/EuclideanToolbox.class" width=550 height=300>
+<PARAM NAME=mode VALUE="LOCKED">
+<PARAM NAME=object_1 VALUE="POINT(275,100,black)">
+<PARAM NAME=object_2 VALUE="POINT(0,250,clear)">
+<PARAM NAME=object_3 VALUE="POINT(550,250,clear)">
+<PARAM NAME=object_4 VALUE="LINE(2,3,black)">
+<PARAM NAME=object_5 VALUE="POINT_ON_LINE(4,.6,red)">
+<PARAM NAME=object_6 VALUE="LINE_SEGMENT(1,5,clear)">
+<PARAM NAME=object_7 VALUE="PERPENDICULAR_BISECTOR(6,gray)">
+<PARAM NAME=object_8 VALUE="PERPENDICULAR_LINE(5,4,clear)">
+<PARAM NAME=object_9 VALUE="LINE_INTERSECTION(7,8,blue)">
+<PARAM NAME=object_10 VALUE="LINE_SEGMENT(5,9,red)">
+</APPLET>
+</TD></TR>
+</TABLE>
+</CENTER>
+
+
+
+<HR>
+&copy; 2005 David P. Little<BR>
+<HR>
+</TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

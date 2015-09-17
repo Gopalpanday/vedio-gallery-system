@@ -1,0 +1,142 @@
+body{
+    background-image: url("../Images/2.jpg");
+}
+.container{
+    margin: auto;
+    padding: auto;
+    width: 1000px;
+    background-color: silver;
+    border-left: 2px solid brown;
+    border-right: 2px solid brown;
+
+}
+
+.header{
+    //background: -ms-linear-gradient(right, red, blue);
+    background-color: brown;
+}
+.footer{
+    clear: left;
+    background-color: brown;
+    color: white;
+    font-family: cambria;
+    font-size: large;
+    text-align: right;
+}
+.header img#left{
+    float: left;
+    padding: 5px;
+    margin-right: 20px;
+    height: 70px;
+    width: 100px;
+}
+.header h1{
+    color: white;
+    line-height: 80px;
+    width: 550px;
+    margin-right: 20px;
+    font-family: magneto;
+    text-shadow: 5px 5px tomato;
+    text-decoration: overline;
+    text-decoration-style: double;
+    word-spacing: 10px;
+}
+.header img#right{
+    position: absolute;
+    left: 1100px;
+    top: 30px;
+    height: 40px;
+    width: 40px;
+}
+
+.header img#mid{
+    position: absolute;
+    left: 1000px;
+    top: 30px;
+    height: 40px;
+    width: 40px;
+}
+.header img#mid:hover{
+    width: 150px;
+    height: 150px;
+}
+
+.player{
+    float: left;
+    margin-left: 10px;
+    width: 620px;
+}
+.player .menu{
+    margin-bottom: 20px;
+    background-color: sandybrown;
+}
+#searchForm{
+    float: left;
+    width: 520px;
+}
+#std{
+    background-color: chocolate;
+    border-style: none;
+    width: 90px;
+    color: yellow;
+    font-family: cambria;
+}
+#sub{
+    background-color: chocolate;
+    border-style: none;
+    width: 150px;
+    color: yellow;
+    font-family: cambria;
+    visibility: hidden;
+}
+#chap{
+    background-color: chocolate;
+    border-style: none;
+    width: 220px;
+    color: yellow;
+    font-family: cambria;
+    visibility: hidden;
+}
+#searchBtn{
+    
+    font-family: cambria;
+    visibility: hidden;
+}
+
+
+.playlist{
+    float: left;
+    margin-left: 15px;
+    width: 350px;
+    height: 500px;
+    overflow: auto;
+    z-index: 100;
+    background-color: white;
+}
+
+.playlist ul{
+    list-style-type: none;
+}
+.clip{
+    margin-bottom: 10px;
+    border: none;
+    float: left;
+    width: 120px;
+}
+.clipLabel{
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-top: 10px;
+    float: left;
+    width: 150px;
+    height: 120px;
+
+    font-family: cambria;
+}
+
+
+.tutsTitle{
+    text-align: center;
+    color: mediumvioletred;
+    font-size: large;
+}

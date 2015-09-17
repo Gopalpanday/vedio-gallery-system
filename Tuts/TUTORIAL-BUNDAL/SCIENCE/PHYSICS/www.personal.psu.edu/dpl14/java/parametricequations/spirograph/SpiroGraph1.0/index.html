@@ -1,0 +1,178 @@
+<HEAD>
+<TITLE>SpiroGraph</TITLE>
+</HEAD>
+
+<BODY bgcolor=lightGrey vlink=blue alink=blue>
+<CENTER>
+<H1><U>SpiroGraph</U></H1>
+</CENTER>
+
+<P>
+The path of a point fixed relative to a circle that rolls along a straight line is called a <I>trochoid</I>.  The easiest way to visualize this phenomenon is to think of the path of a reflector on a bicycle as someone is riding on a level street.  The reflector rotates around the hub of the wheel, but yet the hub of the wheel is moving relative to the ground.
+Here is an <A HREF="http://www.personal.psu.edu/dpl14/java/parametricequations/Cycloid/index.html">applet</A> that demonstrates this (without the bicycle) (<B>NOTE:</B> As of 10/6/00, I have rewritten the cycloid applet.  I had received some comments suggesting that the old version caused some computers to crash.  Hopefully the problem has been fixed.  Let me know if you experience any further problems.)
+</P>
+<P>
+Now think about what happens if the circle is instead rotating around another circle.  In other words, the cyclist is now pedaling his/her way around the equator, instead of down the street. Mathematicians call this path an <I>epicycloid</I>.  The rest of the world calls them <B><I>SpiroGraphs</I></B>!!  The parametric equations for these curves are given by:
+</P>
+<CENTER>
+<CODE>
+x(t)=(R+r)cos(t) + p*cos((R+r)t/r) <BR>
+y(t)=(R+r)sin(t) + p*sin((R+r)t/r) <BR>
+</CODE>
+</CENTER>
+<P>
+where R,r, and p are defined below.  The applet below allows you to create all the SpiroGraphs your heart desires by varying the values of R, r and p, as well as the following parameters:
+</P>
+
+<BLOCKQUOTE>
+<DL><DT><B><LI>Radius1 (R)</B></DT>
+    <DD>Radius of circle (equator) centered at the origin.</DD>
+
+    <DT><B><LI>Radius2 (r)</B></DT>
+    <DD>Radius of circle (bicycle wheel) centered at (R+r,0)</DD>
+
+    <DT><B><LI>Position (p)</B></DT>
+    <DD>Distance of Point (reflector) from the center of Circle2, the circle of radius r.</DD>
+
+    <DT><B><LI>Velocity</B></DT>
+    <DD>Speed at which the SpiroGraph is drawn, with 0 being the slowest and 10 being the fastest.  Can be adjusted while drawing is taking place.  Sometimes half the fun is seeing your SpiroGraph being drawn!  Sometimes not!</DD>
+
+    <DT><B><LI>Resolution</B></DT>
+    <DD>Controls how precise the SpiroGraph is drawn.  For instance, with a Resolution of 360, the points <CODE>(x(t),y(t))</CODE> are plotted for <CODE>t=0,1,2,3,4,5,...,359,360</CODE> degrees.  With a Resolution of 180, only the values of <CODE>t=0,2,4,6,8,10,...,358,360</CODE> are used.  Be careful, the larger the Resolution, the longer it will take to draw the SpiroGraph.  Normally, a value between 270 and 360 will be good enough.  With a small value of Radius2 (say Radius2=1), a small change in Resolution can result in remarkably different SpiroGraphs.</DD>
+
+    <DT><B><LI>Hide/Show</B></DT>
+    <DD>Changing the value of this button will determine whether or not to display the circles/axes while drawing is taking place.  <B>Note:</B> SpiroGraphs are drawn much faster if you "Hide" the circles/axes.</DD>
+
+    <DT><B><LI>Clear</B></DT>
+    <DD>This button will clear the screen of all SpiroGraphs.</DD>
+
+    <DT><B><LI>Reset</B></DT>
+    <DD>This button stops the current SpiroGraph and returns Circle2 and the Point to its original position</DD>
+
+    <DT><B><LI>Draw/Pause/Resume</B></DT>
+    <DD>These buttons should be self explanatory.</DD>
+
+    <DT><B><LI>Red/Green/Blue</B></DT>
+    <DD>You can adjust the values of these sliders to draw your SpiroGraph in virtually any color you like!</DD>
+</DL>
+</BLOCKQUOTE>
+
+<P>
+
+<CENTER>
+<TABLE BORDER=0 WIDTH=560>
+<TR><TD colspan=5><APPLET CODEBASE="class"
+CODE="http://www.personal.psu.edu/dpl14/java/parametricequations/spirograph/SpiroGraph1.0/SpiroGraph.class" width=600 height=550></APPLET><BR>
+&copy; 1997 David P. Little<BR>
+<A HREF="SpiroGraph1.0.zip">Download</A> this applet for off-line viewing (includes source code)<BR>
+</TD></TR>
+ </TABLE>
+<P>
+
+<TABLE BORDER=0 WIDTH=610 bgcolor=white>
+<TR align=center bgcolor=lightblue>
+  <TH>SIMPLE CURVES
+  <TD>Radius1<TD>Radius2<TD>Position<TD>Resolution
+  <TD>Try this:
+
+<TR align=center>
+  <TD bgcolor=lightblue>Cardioid
+  <TD>60<TD>60<TD>60<TD>270
+  <TD align=left>See what happens when you vary the postion to the left or to the right.  How could you get a cardioid oriented differently?
+
+<TR align=center>
+  <TD bgcolor=lightblue>Astroid
+  <TD>60<TD>-15<TD>-15<TD>270
+  <TD align=left>Another name for an astroid is a hypocycloid of four cusps.  What would you change to get the same picture rotated 45 degrees?  Vary the radius and try to get 3,5 or 6 cusps. Also, vary the position and see what happens.
+
+<TR align=center>
+  <TD bgcolor=lightblue>Four-leaved rose
+  <TD>60<TD>-15<TD>45<TD>270
+  <TD align=left>Try to vary the radius and postion to get 3,5 or 6 leaves
+
+<TR align=center>
+  <TD bgcolor=lightblue>Vertical Line
+  <TD>60<TD>-30<TD>-30<TD>270
+  <TD align=left>What would you change to get a horizontal line?
+
+<TR align=center>
+  <TD bgcolor=lightblue>Ellipse
+  <TD>60<TD>-30<TD>-90<TD>270
+  <TD align=left>What would you have to change in order to get an ellipse oriented horizontally?  How would you get an ellipse on the inside of the fixed circle?
+
+<TR align=center>
+  <TD bgcolor=lightblue>Rounded Square
+  <TD>60<TD>-45<TD>-101<TD>270
+  <TD align=left>How about a rounded triangle or pentagon?
+
+<TR align=center>
+  <TD bgcolor=lightblue>Gold fish
+  <TD>75<TD>-25<TD>85<TD>270
+  <TD align=left>This is supposed to be fun, right?
+
+<TR align=center>
+  <TD bgcolor=lightblue>Star fish
+  <TD>75<TD>-30<TD>60<TD>270
+  <TD align=left>Come on, you're enjoying this!
+
+<TR align=center>
+  <TD bgcolor=lightblue>Spiral In, Spiral Out
+  <TD>5<TD>60<TD>60<TD>270
+  <TD align=left>
+
+<TR align=center>
+  <TD bgcolor=lightblue>Rotating Triangle
+  <TD>90<TD>1<TD>105<TD>270
+  <TD align=left>Change the value of Radius 1 just slightly, and see how much the Spirograph changes!!  Make sure to turn the velocity down low, or the drawing will take place too fast to see the triangle being rotated.
+
+<TR align=center>
+  <TD bgcolor=lightblue>Experiment with Resolution
+  <TD>60<TD>1<TD>122<TD>60
+  <TD align=left>Try changing the Resolution to 61, 62, 63.  How do you explain this behavior?
+
+<TR align=center>
+  <TD bgcolor=lightblue>String of Pearls
+  <TD>100<TD>49<TD>66<TD>7
+  <TD align=left>
+
+</TABLE>
+
+<P>
+
+<TABLE BORDER=0 WIDTH=610 bgcolor=white>
+<TR align=center bgcolor=lightblue>
+  <TH>STRANGE PHENOMENON
+  <TD>Radius1<TD>Radius2<TD>Position<TD>Resolution
+  <TD>Comments:
+
+<TR align=center>
+  <TD bgcolor=lightblue>Orbit
+  <TD>60<TD>59<TD>80<TD>1
+  <TD align=left bgcolor=white>Make sure you turn the velocity down low.  See what happens when you change the value of Radius2 to 61.  Change the resolution to 2 and you'll be seeing double.
+
+</TABLE>
+
+<P>
+
+<TABLE BORDER=0 WIDTH=610 bgcolor=white>
+<TR align=center bgcolor=lightblue>
+  <TH>COMPLEX CURVES
+  <TD>Radius1<TD>Radius2<TD>Position<TD>Resolution
+  <TD>Comments:
+
+<TR align=center>
+  <TD bgcolor=lightblue rowspan=2>Bubbles
+  <TD rowspan=2>80<TD>-20<TD>-20<TD rowspan=2>270
+  <TD align=left rowspan=2 bgcolor=white>
+<TR align=center>
+  <TD>20<TD>20
+
+</TABLE>
+
+</CENTER>
+<P>
+
+
+
+</BODY>
+

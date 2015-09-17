@@ -1,0 +1,131 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<title>Lesson 3</title>
+</head><body>
+<div align="right">
+<a href="http://www.ies-math.com/math/javalesson/menu.html"><img src="lesson3_files/menu.gif" border="0" height="41" width="144"></a>
+<a href="http://www.ies-math.com/math/javalesson/index.html"><img src="lesson3_files/top.gif" border="0" height="41" width="144"></a>
+</div>
+<hr>
+<h1>Lesson 3 Drawing graphs of functions</h1>
+<h3>Points and Activities</h3>
+<ol>
+<li>How to create a "method".
+</li><li>Type and parameter of method.
+</li><li>method for transforming coordinates
+</li></ol>
+
+<hr>
+<h3>Example 3 Graphs of functions</h3>
+<a href="http://www.ies-math.com/math/javalesson/Exm3/Exm3.html">Screen of the applets</a>
+<br><br>
+
+<b>Exm3.java</b>
+<br>
+<table border="2" width="600">
+<tbody><tr bgcolor="#ffffff"><td bgcolor="#ccffff">
+<pre>import java.awt.*;                 
+import java.applet.*;              
+
+public class Exm3 extends Applet   
+{
+    int vxmin,vymin,vxmax,vymax;  //screen coordinates
+    double xmin,ymin,xmax,ymax;   //imaginary coordinates
+    double dx;                    //interval of x
+    
+    
+    /* initializing */
+    public void init(){
+        xmin=-5;xmax=5;ymin=-3;ymax=7;
+        vxmin=0;vxmax=300;vymin=0;vymax=300;
+        dx=0.1;
+    }
+    
+    public void paint(Graphics g){             
+        double x1,y1,x2,y2;           
+	   
+        //back color
+        g.setColor(new Color(255, 255, 192)); 
+        g.fillRect(vxmin,vymin,vxmax-vxmin,vymax-vymin);
+	    
+        // xy-coordinates
+        g.setColor(Color.black);
+        Line(g,0,ymin,0,ymax);
+        Line(g,xmin,0,xmax,0);
+	    
+        //graph
+        g.setColor(Color.blue);     
+        x2=xmin;y2=func(x2);
+        for(x1=xmin;x1&lt;=xmax;x1=x1+dx){
+            y1=func(x1);
+            Line(g,x1,y1,x2,y2);
+            x2=x1;y2=y1;
+         }
+    }
+	
+    /* Convert imaginary coordinates to screen cordinates. */
+    public int mapX(double x){
+        int sx;
+        sx= vxmin+(int)((x-xmin)/(xmax-xmin)*(double)(vxmax-vxmin)) ;
+        return sx;
+    }
+    public int mapY(double y){
+        int sy;
+        sy=vymin+(int)((ymax-y)/(ymax-ymin)*(double)(vymax-vymin));
+        return sy;
+    }
+    
+    /* Drawing Line */
+    public void Line(Graphics g,double x1,double y1,double x2,double y2){
+        g.drawLine(mapX(x1),mapY(y1),mapX(x2),mapY(y2));
+    }
+    
+    /* Defining function */
+    public double func(double x){
+        double y;
+        y=x*x;
+        return y;
+    }
+}
+
+
+</pre>
+</td></tr>
+</tbody></table>
+<p>
+
+<b>Exm3.html</b>
+<br>
+<table border="2" width="600">
+<tbody><tr bgcolor="#ffffff"><td bgcolor="#ffffaa">
+<pre>&amp;ltHTML&gt;
+&amp;ltHEAD&gt;
+&amp;ltTITLE&amp;gtExm3&lt;/TITLE&gt;
+&lt;/HEAD&gt;
+&amp;ltBODY&gt;
+&amp;ltAPPLET CODE="Exm3.class" WIDTH=300 HEIGHT=300&gt;&lt;/APPLET&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;
+<pre></pre></pre></td></tr>
+</tbody></table>
+</p><p>
+</p><hr>
+<b>Excercise 3a</b>  <br>
+(1) Modify the applet of example 3, and draw various graphs.<br>
+
+(2) Add a method of drawing the grid of coordinates to the applet
+of example 3.
+<br>
+<p>
+
+<b>Excercise 3b</b> <br>
+Add a method of drawing a circle of given radius and given center point 
+to the applet of example 3. Then draw many circles touching x-axis and whose center points are on y=x^2.<br>
+<br>
+</p><hr>
+<div align="right">
+<a href="http://www.ies-math.com/math/javalesson/menu.html"><img src="lesson3_files/menu.gif" border="0" height="41" width="144"></a>
+<a href="http://www.ies-math.com/math/javalesson/index.html"><img src="lesson3_files/top.gif" border="0" height="41" width="144"></a>
+</div>
+</body></html>

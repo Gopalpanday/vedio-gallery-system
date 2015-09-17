@@ -1,0 +1,102 @@
+<HTML>
+<HEAD>
+<LINK REL="STYLESHEET"  HREF="../../../style.css" TYPE="text/css">
+<LINK REL="SHORTCUT ICON" HREF="../../../images/favicon.ico">
+<TITLE>Entropy</TITLE>
+</HEAD>
+
+<BODY bgcolor=white vlink="blue">
+
+
+<!- ---------------------------- PAGE HEADER ------------------------------- ->
+<TABLE cellpadding=0 cellspacing=0 border=0 width=700>
+<TR>
+<TD colspan=2>
+<FONT size=+2><B>David Little</B></FONT>
+</TD>
+</TR>
+<TR><TD valign=top>
+<A HREF="http://www.math.psu.edu">Mathematics Department</A><BR> 
+<A HREF="http://www.psu.edu">Penn State University</A><BR>
+Eberly College of Science<BR>
+University Park, PA  16802<BR>
+</TD>
+<TD align=right valign=top>
+Office: <A HREF="http://www.our.psu.edu/soc_maps/mcalstr.html">403 McAllister</A><BR>
+Phone: (814) 865-3329<BR>
+Fax: (814) 865-3735<BR>
+e-mail:<A HREF="mailto:dlittle@psu.edu">dlittle@psu.edu</A><BR>
+</TD>
+</TR>
+<!- ------------------------------------------------------------------------ ->
+<TR>
+<TD valign=top align=left colspan=2>
+<BR>
+<TABLE width=100% border=0 cellspacing=0 cellpadding=0>
+<TR align=center bgcolor=#291C5E>
+<TD><A HREF="../../../index.html"><FONT color=white><B>Home</B></FONT></A></TD>
+<TD><A HREF="../../../courses.html"><FONT color=white><B>Courses</B></FONT></A></TD>
+<TD><A HREF="../../../math.html"><FONT color=white><B>Math Links</B></FONT></A></TD>
+<TD><A HREF="../../../resources.html"><FONT color=white><B>Resources</B></FONT></A></TD>
+<TD><A HREF="../../../applets.html"><FONT color=white><B>Java Applets</B></FONT></A></TD>
+</TR>
+</TABLE>
+<BR>
+</TD>
+</TR>
+<TR>
+<TD colspan=2>
+<!- ------------------------------------------------------------------------ ->
+
+<B><FONT size=+1>Shannon's Experiment to Calculate the Entropy of English</FONT></B>
+<BR><I> by Adriano M. Garsia</I>
+<BR>
+Claude Shannon, the inventor of information theory, devised an experiment
+aimed at determining the entropy of an English letter 
+(the amount of information in bits that we obtain on the average 
+when we learn one letter of English).  The experiment is carried out
+as follows.  The user faces a sequence of dashes, each representing
+one of the 26 English letters or a space.  The user is to guess the
+successive letters of the sentence using only the knowledge of the
+letters previously guessed.  At each step we record the total number
+of guesses to reach the correct letter for that position.
+Shannon views the sequence of numbers of guesses as an encoding of the
+orginal sentence.  He uses the entropy of the resulting random
+variable as an estimate for the entropy of an English letter.  
+
+<P>
+The following applet allows you to simulate the Shannon experiment.
+Start typing on the keyboard your guesses for the first letter of 
+the sentence.  When you type the correct letter, the letter will 
+appear in that position and the number of guesses will be displayed 
+underneath it.  Go on to guess the next letter in the same manner.  
+You should press the space bar when you believe that a word has
+ended.  Note that at the bottom of the Applet the letters
+of the alphabet and <I>space</I> appear in blue. When you
+guess a letter incorrectly, the computer helps you keep track
+of your guesses by erasing those letters from the alphabet.  
+
+<P> When the sentence is complete or when you tire of guessing
+letters and click on <i>Entropy</i>, the computer will output the estimate 
+of the entropy that results  from this particular experiment. 
+
+Perhaps we should mention that large scale experiments of this kind yield that
+the amount of information we gain when we learn a letter of English, within 
+a sentence, is aproximately 1.1 bits.  We should also mention
+that in a classroom of about 60 students, with everybody venturing
+guesses for each next letter, we consistently obtained a value of
+about 1.6 bits for the estimate of the entropy. 
+
+<BR><BR><BR>
+
+<CENTER>
+<APPLET CODEBASE="class" CODE="http://www.personal.psu.edu/dpl14/java/informationtheory/entropy/Entropy.class" WIDTH=575 HEIGHT=550></APPLET></CENTER>
+<HR>
+<A HREF="entropy.zip">Download</A> this applet for off-line viewing (includes source code)
+
+<HR>
+</TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>

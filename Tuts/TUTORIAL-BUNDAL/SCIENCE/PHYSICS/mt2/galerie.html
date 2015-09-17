@@ -1,0 +1,589 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>maths online Gallery - Table of contents</title>
+<meta name="description" content="maths online provides a Gallery of multimedia learning tools (mostly Java applets)
+and useful links to other math sites. For school, highschool, college, and university.">
+<meta name="keywords" content="mathematics, math, maths, learning, learning tool, school, study,
+distant learning, education, knowledge, Java, applet, multimedia, interactive,
+interactivity, didactics, puzzle, function plotter, suggestions for the classroom,
+gallery">
+<script language="JavaScript">
+<!--
+function app(Kapitelkurzbezeichnung,Appletkurzbezeichnung,aoderb)
+  // aoderb: "b", "a"
+  // Zur Unterscheidung Netscape/anderer Browser:
+  // Im aktuellen Code ist IE-Variante für beide anwendbar.
+  // Falls  Konflikt mit focus aus einem anderen als dem definierenden Fenster heraus: Fenster_APPLET -> Window_Applet umbenennen
+{
+   if (navigator.appName=="Netscape")
+   {  argument = '<A HREF=\'' +
+     'javascript:var APPLET_' + aoderb + '_' + Appletkurzbezeichnung +
+     ' = window.open("galerie/' + Kapitelkurzbezeichnung + '/applet_' + aoderb + '_' +
+     Appletkurzbezeichnung + '.html","Fenster_APPLET_' + aoderb + '_' + Appletkurzbezeichnung +
+     '","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no"); APPLET_' +
+     aoderb + '_' + Appletkurzbezeichnung + '.focus()\'><IMG SRC="grafiken/applet.gif" WIDTH="26" HEIGHT="11" BORDER="0"></A>&nbsp;'
+   }
+   else
+   {
+   argument = '<A HREF=\'' +
+   'javascript: var APPLET_' + aoderb + '_' + Appletkurzbezeichnung + ';' +
+    'if ((APPLET_' + aoderb + '_' + Appletkurzbezeichnung + ' == null)||(APPLET_' + aoderb + '_' + Appletkurzbezeichnung + '.closed))' +
+    '{ APPLET_' + aoderb + '_' + Appletkurzbezeichnung +
+   ' = window.open("galerie/' + Kapitelkurzbezeichnung + '/applet_' + aoderb + '_' +
+   Appletkurzbezeichnung + '.html","Fenster_APPLET_' + aoderb + '_' + Appletkurzbezeichnung +
+   '","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");' +
+   'APPLET_' + aoderb + '_' + Appletkurzbezeichnung + '.opener = top; APPLET_' + aoderb + '_' + Appletkurzbezeichnung +
+   '.focus();} else { APPLET_' + aoderb + '_' + Appletkurzbezeichnung + '.focus(); }\'><IMG SRC="grafiken/applet.gif" WIDTH="26" HEIGHT="11" BORDER="0"></A>&nbsp;'
+   }
+  document.write(argument);
+
+// Sieht zum Beispiel so aus (für Netscape):
+// <A HREF='javascript:var APPLET_b_aequ = window.open("galerie/gleich/applet_b_aequ.html","Fenster_APPLET_b_aequ","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no"); APPLET_b_aequ.focus();'>
+// <IMG SRC="grafiken/applet.gif" WIDTH="26" HEIGHT="11" BORDER="0"></A>&nbsp;
+// für andere Browser: Struktur wie aufrufen_GrapheN()
+}
+
+
+function open_fplotter()
+   {
+    var fenster_fplotter ; //= null;
+    if ((fenster_fplotter == null)||(fenster_fplotter.closed))
+     { fenster_fplotter = window.open("fplotter/fplotter.html","Fenster_fplotter","width=763,height=530,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");
+       fenster_fplotter.opener = top;
+       fenster_fplotter.focus();
+     }
+    else { fenster_fplotter.focus(); }
+   }
+
+function aufrufen_GrapheN()
+   {
+    var GrapheN;
+    if ((GrapheN == null)||(GrapheN.closed))
+     {
+       // if (navigator.appName!="Netscape")
+       // GrapheN = window.open("galerie/fun1/graphen/s.html","Window_GrapheN","width=468,height=397,resizable=yes,status=no,menubar=yes,scrollbars=no,location=no");
+       // else
+       GrapheN = window.open("galerie/fun1/graphen/s.html","Fenster_GrapheN","width=468,height=397,resizable=yes,status=no,menubar=yes,scrollbars=no,location=no");
+       GrapheN.opener = top;
+       GrapheN.focus();
+      }
+    else { GrapheN.focus(); }
+   }
+
+function aufrufen_GrapheN2()
+   {
+    var GrapheN2;
+    if ((GrapheN2 == null)||(GrapheN2.closed))
+     {
+       // if (navigator.appName!="Netscape")
+       // GrapheN2 = window.open("galerie/fun2/graphen2/s.html","Window_GrapheN2","width=468,height=397,resizable=yes,status=no,menubar=yes,scrollbars=no,location=no");
+       // else
+       GrapheN2 = window.open("galerie/fun2/graphen2/s.html","Fenster_GrapheN2","width=468,height=397,resizable=yes,status=no,menubar=yes,scrollbars=no,location=no");
+       GrapheN2.opener = top;
+       GrapheN2.focus();
+      }
+    else { GrapheN2.focus(); }
+   }
+
+function aufrufen_GrapheN3()
+   {
+    var GrapheN3;
+    if ((GrapheN3 == null)||(GrapheN3.closed))
+     {
+       // if (navigator.appName!="Netscape")
+       // GrapheN3 = window.open("galerie/fun2/graphen3/s.html","Window_GrapheN3","width=468,height=397,resizable=yes,status=no,menubar=yes,scrollbars=no,location=no");
+       // else
+       GrapheN3 = window.open("galerie/fun2/graphen3/s.html","Fenster_GrapheN3","width=468,height=397,resizable=yes,status=no,menubar=yes,scrollbars=no,location=no");
+       GrapheN3.opener = top;
+       GrapheN3.focus();
+      }
+    else { GrapheN3.focus(); }
+   }
+
+function aufrufen_FehleR()
+   {
+    var FehleR;
+    if ((FehleR == null)||(FehleR.closed))
+     {
+       FehleR = window.open("galerie/grenz/fehler/fehler.html","Fenster_FehleR","width=510,height=450,resizable=yes,status=no,menubar=yes,scrollbars=no,location=no");
+       FehleR.opener = top;
+       FehleR.focus();
+      }
+    else { FehleR.focus(); }
+   }
+
+
+  // Zur Unterscheidung Netscape/anderer Browser:
+  // Im aktuellen Code ist IE-Variante für beide anwendbar.
+  // Falls  Konflikt mit focus aus einem anderen als dem definierenden Fenster heraus: Abfrageversion verwenden
+// -->
+</script>
+
+
+</head><body alink="#199801" bgcolor="white" link="#501c7b" vlink="#501c7b">
+
+<br>
+
+<center><table border="0" cellpadding="0" cellspacing="0" width="90%">
+<tbody><tr><td>
+<font color="#501c50" face="Arial,Helvetica">
+&nbsp;Table of contents<br><br><br><br><br>
+</font>
+</td>
+<td><div align="right">
+<a href="http://www.univie.ac.at/future.media/moe/index.html">
+<img src="galerie_files/pfeile.gif" alt="To the Welcome Page" border="0"></a>
+</div></td>
+</tr></tbody></table></center>
+
+<center><table border="0" cellpadding="0" cellspacing="0" width="90%">
+<tbody><tr><td><img src="galerie_files/galerie_logo.jpg" height="86" width="535"></td>
+</tr></tbody></table></center>
+
+<br><br>
+
+<center><table border="0" cellpadding="0" cellspacing="0" width="90%">
+<tbody><tr><td>
+<font color="#501c50" face="Arial,Helvetica">
+The <b>Gallery</b> consists of interactive multimedia learning units
+on various issues that shall facilitate understanding.
+Technically, most units are Java applets, some are graphical supplements
+or other programs (JavaScript).
+For practice and (self) control, visit the collection of
+<a href="http://www.univie.ac.at/future.media/moe/tests.html">interactive tests</a>.
+</font><p>
+<font color="#501c50" face="Arial,Helvetica">A more systematic outline of the underlying mathematical background is included
+in the <a href="http://www.mathe-online.at/"><font color="#7392a1">German version of maths online</font></a>.
+(It is one of our future plans to translate this part into English language).
+</font></p><p>
+<font color="#501c50" face="Arial,Helvetica">The Gallery is under construction since March 1998, and new learning units
+are added continuously. We appreciate
+<a href="http://www.univie.ac.at/future.media/moe/eval.html">feedback</a>
+about your experience with our material.
+
+</font>
+</p></td>
+</tr></tbody></table></center>
+
+<br><br>
+
+
+<center><table bgcolor="#f8f4e3" border="0" cellpadding="30" cellspacing="0" width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica">
+<br>
+
+</font><center><font color="#501c7b" face="Arial,Helvetica"><font size="+2">The learning units of the Gallery</font></font></center>
+<font color="#501c7b" face="Arial,Helvetica"><br><br>
+
+<font size="-1">
+You may call the learning units directly by <b>clicking the respective icon</b>
+
+<center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<img src="galerie_files/applet.gif" border="0" height="11" width="26">&nbsp;
+for applets,
+<br>
+<img src="galerie_files/grafik.gif" border="0" height="11" width="26">&nbsp;
+for graphics or sequences of graphics, and<br>
+<img src="galerie_files/programm.gif" border="0" height="11" width="26">&nbsp;
+for other programs
+</font></td></tr></tbody></table></center>
+
+A <b>click on a hyperlink</b> leads you to a page collecting and briefly describing
+all learning units of a chapter. Occasionally, remarks on additional material and further
+information on the web are made.
+</font>
+<br><br><br>
+
+
+<!--  MASKE: --------------------------------------------------------- -->
+<!--
+
+<FONT SIZE="+1"> ...Überschrift-LINK...
+<BR><BR>
+<CENTER><TABLE WIDTH="90%">
+<TD><FONT FACE="Arial,Helvetica" COLOR="#501C7B" SIZE="-1">
+<SCRIPT LANGUAGE="JavaScript">app("...","...","b")</SCRIPT>
+...Eintragung-LINK...
+<BR>
+<SCRIPT LANGUAGE="JavaScript">app("...","...","b")</SCRIPT>
+...Eintragung-LINK...
+<BR>
+<SCRIPT LANGUAGE="JavaScript">app("...","...","b")</SCRIPT>
+...Eintragung-LINK...
+</FONT></TD></TABLE></CENTER>
+
+<BR>
+
+     -->
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/mengen/mengen.html">Sets</a>
+<br><br>
+</font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("mengen","mdef","b")</script><a href='javascript:var%20APPLET_b_mdef%20=%20window.open("galerie/mengen/applet_b_mdef.html","Fenster_APPLET_b_mdef","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_mdef.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/mengen/mengen.html#mdef">Definition of sets</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/zeich/zeich.html">Drawing plane and coordinate system</a>
+<br><br>
+</font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("zeich","kartes","b")</script><a href='javascript:var%20APPLET_b_kartes%20=%20window.open("galerie/zeich/applet_b_kartes.html","Fenster_APPLET_b_kartes","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_kartes.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/zeich/zeich.html#kartes">Cartesian coordinates</a>
+<br>
+<script language="JavaScript">app("zeich","koord","b")</script><a href='javascript:var%20APPLET_b_koord%20=%20window.open("galerie/zeich/applet_b_koord.html","Fenster_APPLET_b_koord","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_koord.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/zeich/zeich.html#koord">Coordinate system</a>
+<br>
+<script language="JavaScript">app("zeich","polar","b")</script><a href='javascript:var%20APPLET_b_polar%20=%20window.open("galerie/zeich/applet_b_polar.html","Fenster_APPLET_b_polar","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_polar.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/zeich/zeich.html#polar">Polar coordinates</a>
+<br>
+<script language="JavaScript">app("zeich","schief","b")</script><a href='javascript:var%20APPLET_b_schief%20=%20window.open("galerie/zeich/applet_b_schief.html","Fenster_APPLET_b_schief","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_schief.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/zeich/zeich.html#schief">Oblique coordinates</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/var/var.html">Variables, terms, formulae, and identities</a>
+<br><br>
+</font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("var","struk1","b")</script><a href='javascript:var%20APPLET_b_struk1%20=%20window.open("galerie/var/applet_b_struk1.html","Fenster_APPLET_b_struk1","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_struk1.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/var/var.html#struk1">Recognize structures 1</a> &nbsp;(use abbreviations)
+<br>
+<script language="JavaScript">app("var","struk2","b")</script><a href='javascript:var%20APPLET_b_struk2%20=%20window.open("galerie/var/applet_b_struk2.html","Fenster_APPLET_b_struk2","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_struk2.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/var/var.html#struk2">Recognize structures 2</a> &nbsp;(formal properties of expressions)
+<br>
+<script language="JavaScript">app("var","struk3","b")</script><a href='javascript:var%20APPLET_b_struk3%20=%20window.open("galerie/var/applet_b_struk3.html","Fenster_APPLET_b_struk3","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_struk3.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/var/var.html#struk3">Recognize structures 3</a> &nbsp;(numerical properties of expressions)
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/gleich/gleich.html">Equations</a>
+<br><br>
+</font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("gleich","aequ","b")</script><a href='javascript:var%20APPLET_b_aequ%20=%20window.open("galerie/gleich/applet_b_aequ.html","Fenster_APPLET_b_aequ","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_aequ.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/gleich/gleich.html#aequ">Equivalence transformations</a>
+<br>
+<script language="JavaScript">app("gleich","quadr1","b")</script><a href='javascript:var%20APPLET_b_quadr1%20=%20window.open("galerie/gleich/applet_b_quadr1.html","Fenster_APPLET_b_quadr1","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_quadr1.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/gleich/gleich.html#quadr1">Quadratic equations 1</a> &nbsp;(Proof of solution formula)
+<br>
+<script language="JavaScript">app("gleich","quadr2","b")</script><a href='javascript:var%20APPLET_b_quadr2%20=%20window.open("galerie/gleich/applet_b_quadr2.html","Fenster_APPLET_b_quadr2","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_quadr2.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/gleich/gleich.html#quadr2">Quadratic equations 2</a> &nbsp;(Three solution methods)
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/vect1/vect1.html">Vectors 1</a>
+<br><br>
+</font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("vect1","vkenn","b")</script><a href='javascript:var%20APPLET_b_vkenn%20=%20window.open("galerie/vect1/applet_b_vkenn.html","Fenster_APPLET_b_vkenn","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_vkenn.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/vect1/vect1.html#vkenn">Introducing 3-vectors</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/geom1/geom1.html">Analytic geometry 1</a>
+<br><br>
+</font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("geom1","anstieg","b")</script><a href='javascript:var%20APPLET_b_anstieg%20=%20window.open("galerie/geom1/applet_b_anstieg.html","Fenster_APPLET_b_anstieg","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_anstieg.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/geom1/geom1.html#anstieg">The slope of a straight line</a>
+<br>
+<script language="JavaScript">app("geom1","rk","b")</script><a href='javascript:var%20APPLET_b_rk%20=%20window.open("galerie/geom1/applet_b_rk.html","Fenster_APPLET_b_rk","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_rk.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/geom1/geom1.html#rk">Spatial coordinates</a>
+<br>
+<script language="JavaScript">app("geom1","gb","b")</script><a href='javascript:var%20APPLET_b_gb%20=%20window.open("galerie/geom1/applet_b_gb.html","Fenster_APPLET_b_gb","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_gb.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/geom1/geom1.html#gb">Straight lines in 3-space</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/fun1/fun1.html">Functions 1</a>
+<br><br>
+</font></font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("fun1","funktion","b")</script><a href='javascript:var%20APPLET_b_funktion%20=%20window.open("galerie/fun1/applet_b_funktion.html","Fenster_APPLET_b_funktion","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_funktion.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/fun1/fun1.html#funktion">Function and graph</a>
+<br>
+<!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+<a href="javascript:aufrufen_GrapheN()"><img src="galerie_files/grafik.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/fun1/fun1.html#graphenpf">Graphs of simple power functions</a>
+<br>
+<script language="JavaScript">app("fun1","funerk1","b")</script><a href='javascript:var%20APPLET_b_funerk1%20=%20window.open("galerie/fun1/applet_b_funerk1.html","Fenster_APPLET_b_funerk1","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_funerk1.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/fun1/fun1.html#funerk1">Recognize functions 1</a> &nbsp;(simple polynomial functions)
+<br>
+<script language="JavaScript">app("fun1","grapherk1","b")</script><a href='javascript:var%20APPLET_b_grapherk1%20=%20window.open("galerie/fun1/applet_b_grapherk1.html","Fenster_APPLET_b_grapherk1","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_grapherk1.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/fun1/fun1.html#grapherk1">Recognize graphs 1</a> &nbsp;(functions of at most second order)
+<br>
+<script language="JavaScript">app("fun1","pol3","b")</script><a href='javascript:var%20APPLET_b_pol3%20=%20window.open("galerie/fun1/applet_b_pol3.html","Fenster_APPLET_b_pol3","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_pol3.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/fun1/fun1.html#pol3">Polynomial of third order (cubic polynomial)</a>
+<br>
+<a href="javascript:open_fplotter()"><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/fun1/fun1.html#fplotter">Function plotter</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/wfun/wfun.html">Trigonometric functions</a>
+<br><br>
+</font></font></font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("wfun","winkelf","b")</script><a href='javascript:var%20APPLET_b_winkelf%20=%20window.open("galerie/wfun/applet_b_winkelf.html","Fenster_APPLET_b_winkelf","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_winkelf.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/wfun/wfun.html#winkelf">Definition of the trig functions</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/trig/trig.html">Trigonometry</a>
+<br><br>
+</font></font></font></font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("trig","dreieck","b")</script><a href='javascript:var%20APPLET_b_dreieck%20=%20window.open("galerie/trig/applet_b_dreieck.html","Fenster_APPLET_b_dreieck","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_dreieck.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/trig/trig.html#dreieck">Triangle and Law of Sines</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/fun2/fun2.html">Functions 2</a>
+<br><br>
+</font></font></font></font></font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("fun2","funerk2","b")</script><a href='javascript:var%20APPLET_b_funerk2%20=%20window.open("galerie/fun2/applet_b_funerk2.html","Fenster_APPLET_b_funerk2","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_funerk2.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/fun2/fun2.html#funerk2">Recognize functions 2</a> &nbsp;(functions containing negative powers)
+<br>
+<script language="JavaScript">app("fun2","grapherk2","b")</script><a href='javascript:var%20APPLET_b_grapherk2%20=%20window.open("galerie/fun2/applet_b_grapherk2.html","Fenster_APPLET_b_grapherk2","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_grapherk2.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/fun2/fun2.html#grapherk2">Recognize graphs 2</a> &nbsp;(functions containing negative powers)
+<br>
+<script language="JavaScript">app("fun2","sincostan","b")</script><a href='javascript:var%20APPLET_b_sincostan%20=%20window.open("galerie/fun2/applet_b_sincostan.html","Fenster_APPLET_b_sincostan","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_sincostan.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/fun2/fun2.html#sincostan">The graphs of sin, cos and tan</a>
+<br>
+<!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+<a href="javascript:aufrufen_GrapheN2()"><img src="galerie_files/grafik.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/fun2/fun2.html#graphenwf">Graphs of elementary trigonometric functions</a>
+<br>
+<!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+<a href="javascript:aufrufen_GrapheN3()"><img src="galerie_files/grafik.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/fun2/fun2.html#graphenel">Graphs of some exponential and logarithm functions</a>
+<br>
+<script language="JavaScript">app("fun2","funerk3","b")</script><a href='javascript:var%20APPLET_b_funerk3%20=%20window.open("galerie/fun2/applet_b_funerk3.html","Fenster_APPLET_b_funerk3","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_funerk3.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/fun2/fun2.html#funerk3">Recognize functions 3</a> &nbsp;(sine and cosine functions)
+<br>
+<script language="JavaScript">app("fun2","grapherk3","b")</script><a href='javascript:var%20APPLET_b_grapherk3%20=%20window.open("galerie/fun2/applet_b_grapherk3.html","Fenster_APPLET_b_grapherk3","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_grapherk3.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/fun2/fun2.html#grapherk3">Recognize graphs 3</a> &nbsp;(sine and cosine functions)
+<br>
+<a href="javascript:open_fplotter()"><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/fun2/fun2.html#fplotter">Function plotter</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/grenz/grenz.html">Limiting processes</a>
+<br><br>
+</font></font></font></font></font></font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<a href='javascript:Folg_num%20=%20window.open("galerie/grenz/folgennumerisch.html","Fenster_Folg_num","width=750,height=450,resizable=yes,status=no,menubar=no,scrollbars=yes,location=no");Folg_num.focus();'><img src="galerie_files/programm.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/grenz/grenz.html#folgennumerisch">Numerical computation of sequences</a>
+<br>
+<a href='javascript:Reih_num%20=%20window.open("galerie/grenz/reihennumerisch.html","Fenster_Reih_num","width=750,height=510,resizable=yes,status=no,menubar=no,scrollbars=yes,location=no");Reih_num.focus();'><img src="galerie_files/programm.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/grenz/grenz.html#reihennumerisch">Numerical computation of series</a>
+<br>
+<a href="javascript:aufrufen_FehleR()"><img src="galerie_files/grafik.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/grenz/grenz.html#fehler">What is a fault? A tale that makes you smile</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/geom2/geom2.html">Analytic geometry 2</a>
+<br><br>
+</font></font></font></font></font></font></font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("geom2","eb","b")</script><a href='javascript:var%20APPLET_b_eb%20=%20window.open("galerie/geom2/applet_b_eb.html","Fenster_APPLET_b_eb","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_eb.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/geom2/geom2.html#eb">Planes in 3-space</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/diff1/diff1.html">Differentiation 1</a>
+<br><br>
+</font></font></font></font></font></font></font></font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("diff1","ableitung","b")</script><a href='javascript:var%20APPLET_b_ableitung%20=%20window.open("galerie/diff1/applet_b_ableitung.html","Fenster_APPLET_b_ableitung","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_ableitung.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/diff1/diff1.html#ableitung">On the definition of the derivative</a>
+<br>
+<script language="JavaScript">app("diff1","ablpuzzle1","b")</script><a href='javascript:var%20APPLET_b_ablpuzzle1%20=%20window.open("galerie/diff1/applet_b_ablpuzzle1.html","Fenster_APPLET_b_ablpuzzle1","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_ablpuzzle1.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/diff1/diff1.html#ablpuzzle">Derivative puzzle 1</a>
+<br>
+<script language="JavaScript">app("diff1","ablpuzzle2","b")</script><a href='javascript:var%20APPLET_b_ablpuzzle2%20=%20window.open("galerie/diff1/applet_b_ablpuzzle2.html","Fenster_APPLET_b_ablpuzzle2","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_ablpuzzle2.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/diff1/diff1.html#ablpuzzle">Derivative puzzle 2</a>
+<br>
+<script language="JavaScript">app("diff1","ablpuzzle3","b")</script><a href='javascript:var%20APPLET_b_ablpuzzle3%20=%20window.open("galerie/diff1/applet_b_ablpuzzle3.html","Fenster_APPLET_b_ablpuzzle3","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_ablpuzzle3.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/diff1/diff1.html#ablpuzzle">Derivative puzzle 3</a>
+<br>
+<script language="JavaScript">app("diff1","zwabl","b")</script><a href='javascript:var%20APPLET_b_zwabl%20=%20window.open("galerie/diff1/applet_b_zwabl.html","Fenster_APPLET_b_zwabl","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_zwabl.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/diff1/diff1.html#zwabl">First and second derivative</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/anwdiff/anwdiff.html">Applications of differential calculus</a>
+<br><br>
+</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("anwdiff","es","b")</script><a href='javascript:var%20APPLET_b_es%20=%20window.open("galerie/anwdiff/applet_b_es.html","Fenster_APPLET_b_es","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_es.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/anwdiff/anwdiff.html#es">How to find a function's extremum</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/potr/potr.html">Power series</a>
+<br><br>
+</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("potr","preihe1","b")</script><a href='javascript:var%20APPLET_b_preihe1%20=%20window.open("galerie/potr/applet_b_preihe1.html","Fenster_APPLET_b_preihe1","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_preihe1.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/potr/potr.html#preihe1">Power series 1</a> &nbsp;(input by scroll bar)
+<br>
+<script language="JavaScript">app("potr","preihe2","b")</script><a href='javascript:var%20APPLET_b_preihe2%20=%20window.open("galerie/potr/applet_b_preihe2.html","Fenster_APPLET_b_preihe2","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_preihe2.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/potr/potr.html#preihe2">Power series 2</a> &nbsp;(numerical input)
+<br>
+<a href="javascript:open_fplotter()"><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+ <a href="http://www.univie.ac.at/future.media/moe/galerie/potr/potr.html#fplotter">Function plotter</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/geom3/geom3.html">Analytic geometry 3</a>
+<br><br>
+</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("geom3","zykloiden","b")</script><a href='javascript:var%20APPLET_b_zykloiden%20=%20window.open("galerie/geom3/applet_b_zykloiden.html","Fenster_APPLET_b_zykloiden","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_zykloiden.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/geom3/geom3.html#zykloiden">Cycloids</a>
+<br>
+<script language="JavaScript">app("geom3","spiralen","b")</script><a href='javascript:var%20APPLET_b_spiralen%20=%20window.open("galerie/geom3/applet_b_spiralen.html","Fenster_APPLET_b_spiralen","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_spiralen.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/geom3/geom3.html#spiralen">Logarithmic spirals</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/diff2/diff2.html">Differentiation 2</a>
+<br><br>
+</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("diff2","nirgdiff","b")</script><a href='javascript:var%20APPLET_b_nirgdiff%20=%20window.open("galerie/diff2/applet_b_nirgdiff.html","Fenster_APPLET_b_nirgdiff","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_nirgdiff.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/diff2/diff2.html#nirgdiff">Nowhere differentiable functions</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/wstat1/wstat1.html">Probability and statistics 1</a>
+<br><br>
+</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("wstat1","normalv","b")</script><a href='javascript:var%20APPLET_b_normalv%20=%20window.open("galerie/wstat1/applet_b_normalv.html","Fenster_APPLET_b_normalv","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_normalv.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/wstat1/wstat1.html#normalv">The Gauss distribution</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/int/int.html">Integration</a>
+<br><br>
+</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("int","intuitiv","b")</script><a href='javascript:var%20APPLET_b_intuitiv%20=%20window.open("galerie/int/applet_b_intuitiv.html","Fenster_APPLET_b_intuitiv","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_intuitiv.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/int/int.html#intuitiv">Intuitively understanding the integral</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/struct/struct.html">Mathematical structures and spaces</a>
+<br><br>
+</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("struct","lorentz","b")</script><a href='javascript:var%20APPLET_b_lorentz%20=%20window.open("galerie/struct/applet_b_lorentz.html","Fenster_APPLET_b_lorentz","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_lorentz.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/struct/struct.html#lorentz">Lorentz transformation</a>
+</font></td></tr></tbody></table></center>
+
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/fourier/fourier.html">Fourier series</a>
+<br><br>
+</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("fourier","fourier","b")</script><a href='javascript:var%20APPLET_b_fourier%20=%20window.open("galerie/fourier/applet_b_fourier.html","Fenster_APPLET_b_fourier","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_b_fourier.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/fourier/fourier.html#fourier">Fourier series</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/modsim/modsim.html">Model-building and simulation</a>
+<br><br>
+</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("modsim","GameOfLife","a")</script><a href='javascript:var%20APPLET_a_GameOfLife%20=%20window.open("galerie/modsim/applet_a_GameOfLife.html","Fenster_APPLET_a_GameOfLife","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_a_GameOfLife.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/modsim/modsim.html#GameOfLife">Game of Life</a>
+<br>
+<script language="JavaScript">app("modsim","HighLife","a")</script><a href='javascript:var%20APPLET_a_HighLife%20=%20window.open("galerie/modsim/applet_a_HighLife.html","Fenster_APPLET_a_HighLife","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_a_HighLife.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/modsim/modsim.html#HighLife">HighLife</a>
+</font></td></tr></tbody></table></center>
+
+<font color="#501c7b" face="Arial,Helvetica"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><font size="+1"><br>
+
+<font size="+1"> <a href="http://www.univie.ac.at/future.media/moe/galerie/spiel/spiel.html">Maths by playing</a>
+<br><br>
+</font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font><center><table width="90%">
+<tbody><tr><td><font color="#501c7b" face="Arial,Helvetica" size="-1">
+<script language="JavaScript">app("spiel","defbild","a")</script><a href='javascript:var%20APPLET_a_defbild%20=%20window.open("galerie/spiel/applet_a_defbild.html","Fenster_APPLET_a_defbild","width=359,height=145,resizable=yes,status=no,menubar=no,scrollbars=no,location=no");%20APPLET_a_defbild.focus()'><img src="galerie_files/applet.gif" border="0" height="11" width="26"></a>&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/galerie/spiel/spiel.html#defbild">Warp image</a>
+</font></td></tr></tbody></table></center>
+
+</td>
+
+</tr></tbody></table></center>
+
+<br><br>
+
+
+<center><table border="0" cellpadding="0" cellspacing="0" width="90%">
+<tbody><tr><td>
+<font color="#501c50" face="Arial,Helvetica">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#top">Top of this page</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/mathelinks.html">Maths links</a>:
+<a href="http://www.univie.ac.at/future.media/moe/onlinewerkzeuge.html">online tools</a>
+&nbsp;<a href="http://www.univie.ac.at/future.media/moe/einzelthemen.html">topics</a>
+&nbsp;<a href="http://www.univie.ac.at/future.media/moe/collections.html">collections</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.univie.ac.at/future.media/moe/index.html">Welcome Page</a>
+</font>
+</td>
+</tr></tbody></table></center>
+
+<br>
+
+<table border="0" cellpadding="6" cellspacing="0" width="98%">
+<tbody><tr><td width="54%">&nbsp;</td>
+<td width="11%"><center><a href="http://www.bmbwk.gv.at/">
+<img src="galerie_files/bmuklogo.gif" alt="Bundesministerium für Unterricht und kulturelle Angelegenheiten" border="0"></a>
+</center></td>
+<td width="9%"><center><a href="http://www.vhs.at/vwv/">
+<img src="galerie_files/verbandlogo.gif" alt="Verband Wiener Volksbildung" border="0" height="50" width="50"></a>
+</center></td>
+<td width="6%"><center><a href="http://www.magwien.gv.at/">
+<img src="galerie_files/wienwapp.gif" alt="Magistrat der Stadt Wien, MA13" border="0"></a>
+</center></td>
+<td width="18%"><center><a href="http://www.oenb.co.at/">
+<img src="galerie_files/oenblogo.gif" alt="Oesterreichische Nationalbank" border="0"></a>
+</center></td>
+<td width="7%">&nbsp;</td>
+</tr></tbody></table>
+
+
+
+</body></html>

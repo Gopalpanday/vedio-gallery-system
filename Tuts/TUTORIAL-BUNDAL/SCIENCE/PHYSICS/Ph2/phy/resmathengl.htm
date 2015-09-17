@@ -1,0 +1,169 @@
+<html>
+
+<head>
+<title>Forced oscillations, mathematical appendix</title>
+</head>
+
+<body bgcolor="#FFFFFF" link="#0000FF" vlink="#800080">
+
+<table width="100%" bgcolor="#0000FF" cellpadding="10"><tr><td>
+<table width="100%" bgcolor="#FFFF00" cellpadding="5"><tr><td align="center">
+<font size="+2"><b>Forced Oscillations<br>Mathematical Appendix</b></font>
+</td></tr></table>
+</td></tr></table>
+
+<p><b>The spring pendulum is characterized by the spring constant D, the mass m and the constant of attenuation <font face="Symbol">G</font>. (<font face="Symbol">G</font> is a measure of the friction force assumed as proportional to the velocity.)<br>
+The top of the spring pendulum is moved to and fro according
+to the formula y<sub>E</sub> &nbsp; = &nbsp; A<sub>E</sub>
+cos (<font face="Symbol">w</font>t).<br>
+y<sub>E</sub> means the exciter's elongation compared with
+the mid-position; A<sub>E</sub> is the amplitude of the exciter's
+oscillation, <font face="Symbol">w</font> means the corresponding
+angular frequency and t the time.</b></p>
+
+<p><b>It is a question of finding the size of the resonator's elongation y (compared with its mid-position) at the time t.
+Using <font face="Symbol">w</font><sub>0</sub> &nbsp; = &nbsp; (D/m)<sup>1/2</sup> this problem is described by the following differential equation:</b></p>
+
+<p><table align="center" border="1" bgcolor="#00FFFF" cellpadding="10"><tr><td>
+<b>y''(t) &nbsp; = &nbsp; <font face="Symbol">w</font><sub>0</sub><sup>2</sup>
+(A<sub>E</sub> cos (<font face="Symbol">w</font>t) - y(t)) &nbsp;
+- &nbsp; <font face="Symbol">G</font> y'(t)<br>
+Initial conditions: &nbsp; &nbsp; y(0) = 0; &nbsp; y'(0) = 0</b>
+</td></tr></table></p>
+
+<p><b>If you want to solve this differential equation, you have to distinguish between several cases:</b></p>
+
+<dl>
+
+<p><dt><table bgcolor="#FF80FF"><tr><td>
+<b>Case 1: <font face="Symbol">G</font> &lt;
+2 <font face="Symbol">w</font><sub>0</sub></b>
+</td></tr></table></dt></p>
+
+<dl>
+
+<p><dt><table bgcolor="#00FF00"><tr><td>
+<b>Case 1.1:
+<font face="Symbol">G</font> &lt; 2 <font face="Symbol">w</font><sub>0</sub>;
+<font face="Symbol">G &#185;</font> 0 or
+<font face="Symbol">w</font> <font face="Symbol">&#185;</font>
+<font face="Symbol">w</font><sub>0</sub></b>
+</td></tr></table></dt></p>
+
+<p><b>y(t) &nbsp; = &nbsp; A<sub>abs</sub> sin (<font face="Symbol">w</font>t)
++ A<sub>el</sub> cos (<font face="Symbol">w</font>t)
+&nbsp; + &nbsp; e<sup>-<font face="Symbol">G</font>t/2</sup>
+[A<sub>1</sub> sin (<font face="Symbol">w</font><sub>1</sub>t)
++ B<sub>1</sub> cos (<font face="Symbol">w</font><sub>1</sub>t)]<br>
+
+<font face="Symbol">w</font><sub>1</sub> &nbsp; = &nbsp;
+(<font face="Symbol">w</font><sub>0</sub><sup>2</sup>
+- <font face="Symbol">G</font><sup>2</sup>/4)<sup>1/2</sup><br>
+
+A<sub>abs</sub> &nbsp; = &nbsp; A<sub>E</sub>
+<font face="Symbol">w</font><sub>0</sub><sup>2</sup>
+<font face="Symbol">G</font> <font face="Symbol">w</font>
+/ [(<font face="Symbol">w</font><sub>0</sub><sup>2</sup>
+- <font face="Symbol">w</font><sup>2</sup>)<sup>2</sup>
++ <font face="Symbol">G</font><sup>2</sup> <font face="Symbol">w</font><sup>2</sup>]<br>
+
+A<sub>el</sub> &nbsp; = &nbsp; A<sub>E</sub>
+<font face="Symbol">w</font><sub>0</sub><sup>2</sup>
+(<font face="Symbol">w</font><sub>0</sub><sup>2</sup>
+- <font face="Symbol">w</font><sup>2</sup>)
+/ [(<font face="Symbol">w</font><sub>0</sub><sup>2</sup>
+- <font face="Symbol">w</font><sup>2</sup>)<sup>2</sup>
++ <font face="Symbol">G</font><sup>2</sup> <font face="Symbol">w</font><sup>2</sup>]<br>
+
+A<sub>1</sub> &nbsp; = &nbsp; - (A<sub>abs</sub> <font face="Symbol">w</font>
++ (<font face="Symbol">G</font>/2) A<sub>el</sub>)
+/ <font face="Symbol">w</font><sub>1</sub><br>
+
+B<sub>1</sub> &nbsp; = &nbsp; - A<sub>el</sub>
+</b></p>
+
+<p><dt><table bgcolor="#00FF00"><tr><td>
+<b>Case 1.2:
+<font face="Symbol">G</font> &lt; 2 <font face="Symbol">w</font><sub>0</sub>;
+<font face="Symbol">G</font> = 0 and
+<font face="Symbol">w</font> = <font face="Symbol">w</font><sub>0</sub></b>
+</td></tr></table></dt></p>
+
+<p><b>y(t) &nbsp; = &nbsp; (A<sub>E</sub> <font face="Symbol">w</font> t / 2)
+sin (<font face="Symbol">w</font>t)</b></p>
+
+</dl>
+
+<p><dt><table bgcolor="#FF80FF"><tr><td>
+<b>Case 2: <font face="Symbol">G</font> =
+2 <font face="Symbol">w</font><sub>0</sub></b>
+</td></tr></table></dt></p>
+
+<p><b>y(t) &nbsp; = &nbsp; A<sub>abs</sub> sin (<font face="Symbol">w</font>t)
++ A<sub>el</sub> cos (<font face="Symbol">w</font>t)
+&nbsp; + &nbsp; e<sup>-<font face="Symbol">G</font>t/2</sup>
+(A<sub>1</sub> t + B<sub>1</sub>)<br>
+
+A<sub>abs</sub> &nbsp; = &nbsp; A<sub>E</sub>
+<font face="Symbol">w</font><sub>0</sub><sup>2</sup>
+<font face="Symbol">G</font> <font face="Symbol">w</font>
+/ (<font face="Symbol">w</font><sub>0</sub><sup>2</sup>
++ <font face="Symbol">w</font><sup>2</sup>)<sup>2</sup><br>
+
+A<sub>el</sub> &nbsp; = &nbsp; A<sub>E</sub>
+<font face="Symbol">w</font><sub>0</sub><sup>2</sup>
+(<font face="Symbol">w</font><sub>0</sub><sup>2</sup>
+- <font face="Symbol">w</font><sup>2</sup>)
+/ (<font face="Symbol">w</font><sub>0</sub><sup>2</sup>
++ <font face="Symbol">w</font><sup>2</sup>)<sup>2</sup><br>
+
+A<sub>1</sub> &nbsp; = &nbsp; - (A<sub>abs</sub> <font face="Symbol">w</font>
++ (<font face="Symbol">G</font>/2) A<sub>el</sub>)<br>
+
+B<sub>1</sub> &nbsp; = &nbsp; - A<sub>el</sub>
+</b></p>
+
+<p><dt><table bgcolor="#FF80FF"><tr><td>
+<b>Fall 3:
+<font face="Symbol">G</font> &gt;
+2 <font face="Symbol">w</font><sub>0</sub></b>
+</td></tr></table></dt></p>
+
+<p><b>y(t) &nbsp; = &nbsp; A<sub>abs</sub> sin (<font face="Symbol">w</font>t)
++ A<sub>el</sub> cos (<font face="Symbol">w</font>t)
+&nbsp; + &nbsp; e<sup>-<font face="Symbol">G</font>t/2</sup>
+[A<sub>1</sub> sinh (<font face="Symbol">w</font><sub>1</sub>t)
++ B<sub>1</sub> cosh (<font face="Symbol">w</font><sub>1</sub>t)]<br>
+
+<font face="Symbol">w</font><sub>1</sub> &nbsp; = &nbsp;
+(<font face="Symbol">G</font><sup>2</sup>/4
+- <font face="Symbol">w</font><sub>0</sub><sup>2</sup>)<sup>1/2</sup><br>
+
+A<sub>abs</sub> &nbsp; = &nbsp; A<sub>E</sub>
+<font face="Symbol">w</font><sub>0</sub><sup>2</sup>
+<font face="Symbol">G</font> <font face="Symbol">w</font>
+/ [(<font face="Symbol">w</font><sub>0</sub><sup>2</sup>
+- <font face="Symbol">w</font><sup>2</sup>)<sup>2</sup>
++ <font face="Symbol">G</font><sup>2</sup> <font face="Symbol">w</font><sup>2</sup>]<br>
+
+A<sub>el</sub> &nbsp; = &nbsp; A<sub>E</sub>
+<font face="Symbol">w</font><sub>0</sub><sup>2</sup>
+(<font face="Symbol">w</font><sub>0</sub><sup>2</sup>
+- <font face="Symbol">w</font><sup>2</sup>)
+/ [(<font face="Symbol">w</font><sub>0</sub><sup>2</sup>
+- <font face="Symbol">w</font><sup>2</sup>)<sup>2</sup>
++ <font face="Symbol">G</font><sup>2</sup> <font face="Symbol">w</font><sup>2</sup>]<br>
+
+A<sub>1</sub> &nbsp; = &nbsp; - (A<sub>abs</sub> <font face="Symbol">w</font>
++ (<font face="Symbol">G</font>/2) A<sub>el</sub>)
+/ <font face="Symbol">w</font><sub>1</sub><br>
+
+B<sub>1</sub> &nbsp; = &nbsp; - A<sub>el</sub></b></p>
+
+</dl>
+
+<hr>
+
+</body>
+
+</html>

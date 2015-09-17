@@ -1,0 +1,81 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<title>Lesson 1</title>
+</head><body>
+<div align="right">
+<a href="http://www.ies-math.com/math/javalesson/menu.html"><img src="lesson1_files/menu.gif" border="0" height="41" width="144"></a>
+<a href="http://www.ies-math.com/math/javalesson/index.html"><img src="lesson1_files/top.gif" border="0" height="41" width="144"></a>
+</div>
+<hr>
+
+<h1>Lesson 1 How to make applets</h1>
+<h3>Activities</h3>
+<ol>
+<li>Compiling
+</li><li>Java source files and HTML files
+</li><li>Basic structure of java source files
+</li><li>for-next sentences
+</li><li>Screen coordinates
+</li></ol>
+
+<hr>
+<h3>Example 1 Drawing line design</h3>
+<a href="http://www.ies-math.com/math/javalesson/Exm1/Exm1.html">Screen of the applets</a>
+<br><br>
+
+<b>Exm1.java</b>
+<br>
+<table border="2" width="500">
+<tbody><tr bgcolor="#ffffff"><td bgcolor="#ccffff">
+<pre>import java.awt.*;                  //use all awt package
+import java.applet.*;               //use applet package
+
+public class Exm1 extends Applet    //declaration of class
+{
+	public void paint(Graphics g)   //paint method
+	{
+		int x;                      //variable x
+		for(x=0;x&lt;=200;x=x+10){     //for - next
+		    g.drawLine(x,200,0,x);  //drawing line
+		}
+	}
+}
+</pre>
+</td></tr>
+</tbody></table>
+<p>
+
+<b>Exm1.html</b>
+<br>
+<table border="2" width="500">
+<tbody><tr bgcolor="#ffffff"><td bgcolor="#ffffaa">
+<pre>&amp;ltHTML&gt;
+&amp;ltHEAD&gt;
+&amp;ltTITLE&amp;gtExm1&lt;/TITLE&gt;
+&lt;/HEAD&gt;
+&amp;ltBODY&gt;
+&amp;ltAPPLET CODE="Exm1.class" WIDTH=200 HEIGHT=200&gt;&lt;/APPLET&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;
+<pre></pre></pre></td></tr>
+</tbody></table>
+</p><p>
+</p><hr>
+<b>Excercise 1a</b>  Create applets that draws the following figure. 
+The interval of each line is 20 pixels.
+<br>
+
+<img src="lesson1_files/Exr1a.gif" height="200" width="200">
+<p>
+
+<b>Excercise 1b</b>    Create applets that draws the following figure. 
+<br>
+<img src="lesson1_files/Exr1b.gif" height="200" width="200">
+<br>
+</p><hr>
+<div align="right">
+<a href="http://www.ies-math.com/math/javalesson/menu.html"><img src="lesson1_files/menu.gif" border="0" height="41" width="144"></a>
+<a href="http://www.ies-math.com/math/javalesson/index.html"><img src="lesson1_files/top.gif" border="0" height="41" width="144"></a>
+</div>
+</body></html>
